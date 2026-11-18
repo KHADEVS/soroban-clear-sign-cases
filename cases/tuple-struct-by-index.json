@@ -1,0 +1,73 @@
+{
+  "id": "tuple-struct-by-index",
+  "title": "Tuple-struct members by position: refused by §4.3",
+  "draft_sections": [
+    "2.1",
+    "4.3"
+  ],
+  "transaction": "real/mint-batch.json",
+  "descriptors": [
+    "descriptors/crafted/mint-batch-by-index.json"
+  ],
+  "notes": [
+    "The same call, with integer steps into the tuple struct. §2.1 and §4.3 allow integer steps only into vec and tuple types, so the descriptor is invalid. Together with tuple-struct-by-member-name, there is no way to reach a tuple-struct member.",
+    "A possible rule: a struct whose members are named exactly \"0\" to \"n-1\" is encoded as SCV_VEC, and paths step into it by position."
+  ],
+  "expected": {
+    "operations": [
+      {
+        "invocation": {
+          "contract": "CBOOCGZSVRSZFRE4U2NWR2B4RXYVJWRCBTGOUD2JPI2TDJPWMTJX7FZP",
+          "described": false,
+          "function": "mint_batch",
+          "not_described": "descriptor invalid: field 0: cannot step Index(0) into udt:MintBatchOperation",
+          "raw": [
+            {
+              "label": "operations",
+              "value": "{\"vec\":[{\"vec\":[{\"address\":\"GBIWWLPWI7FFHLXUHDABHORO24XXCCOJBR4YIZOBLJVQM3SXPCVPJZZW\"},{\"i128\":\"4916280656\"}]},{\"vec\":[{\"address\":\"GCBCMYUE4VLFSTPSAAF6XX5NP4J5W3A3IE3OKZKKDLHBVO6BQS52U7CB\"},{\"i128\":\"4916280656\"}]},{\"vec\":[{\"address\":\"GAKS6NNRBJCXI5CQYPRZM4ZN4FEHJBS44WGPOEWO3AV2U22JX6FAZA7K\"},{\"i128\":\"2458140328\"}]},{\"vec\":[{\"address\":\"GCO344QPZHVMJAVEUOD6ZG4V2PAL5NIFE53GES3A3XBYRKRMGVSYWCGA\"},{\"i128\":\"2654791554\"}]},{\"vec\":[{\"address\":\"GCBN6ARV4Q7IFFUPNXZH42PK7HRU6SPCDRBMNAYENCLZQE25SXMHHHL3\"},{\"i128\":\"1769861036\"}]},{\"vec\":[{\"address\":\"GDNY7ZELTUR65KOJYETNESIXXJJSI3D2CNDJ6IYR5MIQ6IZU2XYSFPFX\"},{\"i128\":\"1474884197\"}]},{\"vec\":[{\"address\":\"GBNMRHRNML7ROINVQY3GVL7UFK4RP5A2EI7LQXXNXYMIGVFRR5AHTZP4\"},{\"i128\":\"983256131\"}]},{\"vec\":[{\"address\":\"GDL2SCQN5VH2UBW7RDK3PQKW7IZ75WVWD36IDOTQKL64XGGIG4WKET2R\"},{\"i128\":\"9832561\"}]},{\"vec\":[{\"address\":\"GBIVPG7LUBGBBUFG7PYA3IFF4OJW7S25PVMK7E2VLK64RJVSS3OF46A7\"},{\"i128\":\"2209935016\"}]},{\"vec\":[{\"address\":\"GAJZH2S25VZIASMBMAQYQVMU3LV7RWJ4BDIU4D32BBFND3ZZZ6GD63K3\"},{\"i128\":\"49162806\"}]}]}"
+            },
+            {
+              "label": "caller",
+              "value": "GBWKGT3QU7QOBEXATJFBNWXWSESGXYNIMJ326K36KOTP6DFF7KAIXIQY"
+            },
+            {
+              "label": "idempotency_key",
+              "value": "{\"string\":\"5958f7c436953349a1e7cfc943693937810c16653ed9d61f868dad90a94db16e5dced7a5292fd830b5965a93111f2e044c5f97527491474cb061f3deec806cef\"}"
+            }
+          ]
+        },
+        "auth": [
+          {
+            "credentials": {
+              "address": "GBWKGT3QU7QOBEXATJFBNWXWSESGXYNIMJ326K36KOTP6DFF7KAIXIQY",
+              "kind": "address (legacy)",
+              "signature_expiration_ledger": 65442889
+            },
+            "tree": {
+              "display": {
+                "contract": "CBOOCGZSVRSZFRE4U2NWR2B4RXYVJWRCBTGOUD2JPI2TDJPWMTJX7FZP",
+                "described": false,
+                "function": "mint_batch",
+                "not_described": "legacy SOROBAN_CREDENTIALS_ADDRESS: out of scope",
+                "raw": [
+                  {
+                    "label": "arg 0",
+                    "value": "{\"vec\":[{\"vec\":[{\"address\":\"GBIWWLPWI7FFHLXUHDABHORO24XXCCOJBR4YIZOBLJVQM3SXPCVPJZZW\"},{\"i128\":\"4916280656\"}]},{\"vec\":[{\"address\":\"GCBCMYUE4VLFSTPSAAF6XX5NP4J5W3A3IE3OKZKKDLHBVO6BQS52U7CB\"},{\"i128\":\"4916280656\"}]},{\"vec\":[{\"address\":\"GAKS6NNRBJCXI5CQYPRZM4ZN4FEHJBS44WGPOEWO3AV2U22JX6FAZA7K\"},{\"i128\":\"2458140328\"}]},{\"vec\":[{\"address\":\"GCO344QPZHVMJAVEUOD6ZG4V2PAL5NIFE53GES3A3XBYRKRMGVSYWCGA\"},{\"i128\":\"2654791554\"}]},{\"vec\":[{\"address\":\"GCBN6ARV4Q7IFFUPNXZH42PK7HRU6SPCDRBMNAYENCLZQE25SXMHHHL3\"},{\"i128\":\"1769861036\"}]},{\"vec\":[{\"address\":\"GDNY7ZELTUR65KOJYETNESIXXJJSI3D2CNDJ6IYR5MIQ6IZU2XYSFPFX\"},{\"i128\":\"1474884197\"}]},{\"vec\":[{\"address\":\"GBNMRHRNML7ROINVQY3GVL7UFK4RP5A2EI7LQXXNXYMIGVFRR5AHTZP4\"},{\"i128\":\"983256131\"}]},{\"vec\":[{\"address\":\"GDL2SCQN5VH2UBW7RDK3PQKW7IZ75WVWD36IDOTQKL64XGGIG4WKET2R\"},{\"i128\":\"9832561\"}]},{\"vec\":[{\"address\":\"GBIVPG7LUBGBBUFG7PYA3IFF4OJW7S25PVMK7E2VLK64RJVSS3OF46A7\"},{\"i128\":\"2209935016\"}]},{\"vec\":[{\"address\":\"GAJZH2S25VZIASMBMAQYQVMU3LV7RWJ4BDIU4D32BBFND3ZZZ6GD63K3\"},{\"i128\":\"49162806\"}]}]}"
+                  },
+                  {
+                    "label": "arg 1",
+                    "value": "GBWKGT3QU7QOBEXATJFBNWXWSESGXYNIMJ326K36KOTP6DFF7KAIXIQY"
+                  },
+                  {
+                    "label": "arg 2",
+                    "value": "{\"string\":\"5958f7c436953349a1e7cfc943693937810c16653ed9d61f868dad90a94db16e5dced7a5292fd830b5965a93111f2e044c5f97527491474cb061f3deec806cef\"}"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "functions": {
+    "submit": {
+      "fields": [
+        {
+          "format": "enum",
+          "label": "Action 1",
+          "path": [
+            "requests",
+            0,
+            "request_type"
+          ],
+          "values": {
+            "0": "Supply",
+            "1": "Withdraw",
+            "2": "Supply collateral",
+            "3": "Withdraw collateral",
+            "4": "Borrow",
+            "5": "Repay"
+          }
+        },
+        {
+          "format": "amount",
+          "label": "Amount 1",
+          "path": [
+            "requests",
+            0,
+            "amount"
+          ],
+          "token": {
+            "path": [
+              "requests",
+              0,
+              "address"
+            ]
+          }
+        },
+        {
+          "format": "enum",
+          "label": "Action 2",
+          "path": [
+            "requests",
+            1,
+            "request_type"
+          ],
+          "values": {
+            "0": "Supply",
+            "1": "Withdraw",
+            "2": "Supply collateral",
+            "3": "Withdraw collateral",
+            "4": "Borrow",
+            "5": "Repay"
+          }
+        },
+        {
+          "format": "amount",
+          "label": "Amount 2",
+          "path": [
+            "requests",
+            1,
+            "amount"
+          ],
+          "token": {
+            "path": [
+              "requests",
+              1,
+              "address"
+            ]
+          }
+        },
+        {
+          "format": "enum",
+          "label": "Action 3",
+          "path": [
+            "requests",
+            2,
+            "request_type"
+          ],
+          "values": {
+            "0": "Supply",
+            "1": "Withdraw",
+            "2": "Supply collateral",
+            "3": "Withdraw collateral",
+            "4": "Borrow",
+            "5": "Repay"
+          }
+        },
+        {
+          "format": "amount",
+          "label": "Amount 3",
+          "path": [
+            "requests",
+            2,
+            "amount"
+          ],
+          "token": {
+            "path": [
+              "requests",
+              2,
+              "address"
+            ]
+          }
+        },
+        {
+          "label": "Account",
+          "path": [
+            "from"
+          ]
+        },
+        {
+          "label": "Pays from",
+          "path": [
+            "spender"
+          ]
+        },
+        {
+          "label": "Sends to",
+          "path": [
+            "to"
+          ]
+        }
+      ],
+      "intent": "Update lending position"
+    }
+  },
+  "version": 1,
+  "wasm_hashes": [
+    "0e4f8f45b94e6b0d017a496ac5620ad0e3f866533cf45acd2b070bedda1e7356"
+  ]
+}

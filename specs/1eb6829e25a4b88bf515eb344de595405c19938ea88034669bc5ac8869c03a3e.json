@@ -1,0 +1,30 @@
+{
+  "crafted": "spec written for these cases (token); no such Wasm exists",
+  "entries": [
+    {
+      "function_v0": {
+        "doc": "",
+        "inputs": [
+          {
+            "doc": "",
+            "name": "from",
+            "type": "address"
+          },
+          {
+            "doc": "",
+            "name": "to",
+            "type": "address"
+          },
+          {
+            "doc": "",
+            "name": "amount",
+            "type": "i128"
+          }
+        ],
+        "name": "transfer",
+        "outputs": []
+      }
+    }
+  ],
+  "wasm_hash": "1eb6829e25a4b88bf515eb344de595405c19938ea88034669bc5ac8869c03a3e"
+}

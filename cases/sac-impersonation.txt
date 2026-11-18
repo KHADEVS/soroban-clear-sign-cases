@@ -1,0 +1,6 @@
+[not described: Stellar Asset Contract whose asset does not hash to its ID]
+Contract           CBFWQUVJMK7AEEGB2NJAE5KIHEJWOK4EZ5FWKCHE6VIRI53ZGPM5KQW6
+Function           transfer
+arg 0              GAXK4ABJ673Y2PJ2HFOHSA2Z3BQ532KLWAWYCGKAVFDUBBKXUTJE555M
+arg 1              GB46FU6LDIONFP2YMBEIINFRLREGDKWWAWLNESNZCGEME5J7KEFCDLFV
+arg 2              100000000

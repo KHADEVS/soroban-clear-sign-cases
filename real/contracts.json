@@ -1,0 +1,73 @@
+{
+  "_note": "Resolved from Mainnet state on 2026-11-18 through Soroban RPC. seen_in_ledger is a ledger where a fetched transaction used the contract (or the latest ledger when the contract was fetched alone).",
+  "CACSQWCMKG45TUHCQ3LXHOB7YEEJH4W376ZHQPXH2IZ3TE4NJHFZMCY7": {
+    "kind": "wasm",
+    "seen_in_ledger": 65467966,
+    "wasm_hash": "0e4f8f45b94e6b0d017a496ac5620ad0e3f866533cf45acd2b070bedda1e7356"
+  },
+  "CAS3J7GYLGXMF6TDJBBYYSE3HQ6BBSMLNUQ34T6TZMYMW2EVH34XOWMA": {
+    "asset": "native",
+    "kind": "stellar_asset",
+    "seen_in_ledger": 65467966
+  },
+  "CB23WRDQWGSP6YPMY4UV5C4OW5CBTXKYN3XEATG7KJEZCXMJBYEHOUOV": {
+    "asset": "KALE:GBDVX4VELCDSQ54KQJYTNHXAHFLBCA77ZY2USQBM4CSHTTV7DME7KALE",
+    "kind": "stellar_asset",
+    "seen_in_ledger": 65546361
+  },
+  "CBLLEW7HD2RWATVSMLAGWM4G3WCHSHDJ25ALP4DI6LULV5TU35N2CIZA": {
+    "asset": "XRF:GCHI6I3X62ND5XUMWINNNKXS2HPYZWKFQBZZYBSMHJ4MIP2XJXSZTXRF",
+    "kind": "stellar_asset",
+    "seen_in_ledger": 65262475
+  },
+  "CBOOCGZSVRSZFRE4U2NWR2B4RXYVJWRCBTGOUD2JPI2TDJPWMTJX7FZP": {
+    "kind": "wasm",
+    "seen_in_ledger": 65442791,
+    "wasm_hash": "83bf0a7fbe1502271f2e14d2a5a46c9cde1aa213be97616bd7c6b102b342692f"
+  },
+  "CBQDHNBFBZYE4MKPWBSJOPIYLW4SFSXAXUTSXJN76GNKYVYPCKWC6QUK": {
+    "kind": "wasm",
+    "seen_in_ledger": 65547628,
+    "wasm_hash": "c99539b023df4a28d7857d33ca4c915c2e20fec04f12b125132b84fbdf94dad3"
+  },
+  "CCISQHV7UC3NZQ5WGADCNDYCG4FRWNKPISEGPLKADC3FFYEBG7QYIPRO": {
+    "kind": "wasm",
+    "seen_in_ledger": 65546361,
+    "wasm_hash": "515e6582a312d50c5069e755f73faba3f7af8c5402542ae46509c6d1c7772da9"
+  },
+  "CCPGFQUTSEHDIQODRE3GJDNE64A35HZ32L7LPDN7GXOCIYNBJSMS6V6B": {
+    "kind": "wasm",
+    "seen_in_ledger": 65262475,
+    "wasm_hash": "131db85e62b0f7e3683bf4b5a6ae22b801d9acb2effd5cf3d78e9921b77b7c94"
+  },
+  "CCW67TSZV3SSS2HXMBQ5JFGCKJNXKZM7UQUWUZPUTHXSTZLEO7SJMI75": {
+    "asset": "USDC:GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN",
+    "kind": "stellar_asset",
+    "seen_in_ledger": 65467966
+  },
+  "CDFZUVS5YNLXU7VENKOUDEOHCJGKQNVUBWD7KMN6E7ZROKPYPFLRUJFG": {
+    "asset": "sUSD:GCHW7CWI7GMIYQYFXMFJNJX5645XGWIINIAEQK3SABQO6CAYL5T7JYIH",
+    "kind": "stellar_asset",
+    "seen_in_ledger": 65262475
+  },
+  "CDJQXBQO5ICVQUPHZHW7SHOM56K2UNNPPAIXUUSA3XACEI6Q4JQLXNVI": {
+    "asset": "XCR:GBLJBHWVORDFI4J7CLBDRPECMYT3XO5S6GERXGC74VXOJMZPLI6ZU3S7",
+    "kind": "stellar_asset",
+    "seen_in_ledger": 65262475
+  },
+  "CDL74RF5BLYR2YBLCCI7F5FB6TPSCLKEJUBSD2RSVWZ4YHF3VMFAIGWA": {
+    "kind": "wasm",
+    "seen_in_ledger": 65546361,
+    "wasm_hash": "db2c14290d4964e3805f2527dd132939ba5fb3fccac56b30bfab8fd091011627"
+  },
+  "CDTKPWPLOURQA2SGTKTUQOWRCBZEORB4BWBOMJ3D3ZTQQSGE5F6JBQLV": {
+    "asset": "EURC:GDHU6WRG4IEQXM5NZ4BMPKOXHW76MZM4Y2IEMFDVXBSDP6SJY4ITNPP2",
+    "kind": "stellar_asset",
+    "seen_in_ledger": 65262475
+  },
+  "CDXRIV6XHJWJXCFCP7CGPPQCLQSVMJ64UOOJY2XLCFAOMF6OUFEH2VDD": {
+    "kind": "wasm",
+    "seen_in_ledger": 65547628,
+    "wasm_hash": "72eb5d52c532e78ccc6c8a7f8523c458e03764074717172f69c2539e754ce624"
+  }
+}

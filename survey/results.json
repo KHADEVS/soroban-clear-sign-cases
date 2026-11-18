@@ -1,0 +1,1783 @@
+{
+  "credentials": {
+    "address(C)": 7,
+    "address(G)": 5613,
+    "address_v2(G)": 8,
+    "source_account": 3125
+  },
+  "ledger_range": [
+    65426679,
+    65546512
+  ],
+  "ledgers_sampled": 120,
+  "rpc": "https://mainnet.sorobanrpc.com",
+  "soroban_invoke_transactions": 7287,
+  "stellar_asset_contract_distinct_signers": {
+    "approve": 3,
+    "burn": 2397,
+    "mint": 1,
+    "transfer": 73
+  },
+  "stellar_asset_contract_functions": {
+    "approve": {
+      "auth node, root, source_account": 4,
+      "root call": 4
+    },
+    "burn": {
+      "auth node, sub-invocation, address(G)": 5111
+    },
+    "mint": {
+      "auth node, sub-invocation, address_v2(G)": 1
+    },
+    "transfer": {
+      "auth node, root, address(G)": 1,
+      "auth node, root, address_v2(G)": 1,
+      "auth node, root, source_account": 27,
+      "auth node, sub-invocation, address(G)": 32,
+      "auth node, sub-invocation, address_v2(G)": 4,
+      "auth node, sub-invocation, source_account": 50,
+      "root call": 29
+    }
+  },
+  "time_inputs": [
+    {
+      "contract": "CDA3XS2HETVCW5GSRN3FH4X3YJ45IA6DNVSZTEOYDFGOCXQK4ZJG22JM",
+      "function": "submit_prices",
+      "input": "package_timestamp",
+      "max": 1795013565347,
+      "min": 1794525169176,
+      "past_year_9999": 3,
+      "samples": 3,
+      "u64_max": 0
+    },
+    {
+      "contract": "CCTRZALXT26HD52TSOVQ7LTP7QC5WRZ4QKTLYSMEQ4GVO77AHGDD24LF",
+      "function": "claim_withdrawal",
+      "input": "expires_at",
+      "max": 1794586353,
+      "min": 1794571055,
+      "past_year_9999": 0,
+      "samples": 2,
+      "u64_max": 0
+    }
+  ],
+  "top_calls": [
+    {
+      "auth_nodes": 8060,
+      "contract": "CDL74RF5BLYR2YBLCCI7F5FB6TPSCLKEJUBSD2RSVWZ4YHF3VMFAIGWA",
+      "distinct_signers": 4183,
+      "function": "plant",
+      "label": "Wasm db2c1429",
+      "root_calls": 2949
+    },
+    {
+      "auth_nodes": 0,
+      "contract": "CDL74RF5BLYR2YBLCCI7F5FB6TPSCLKEJUBSD2RSVWZ4YHF3VMFAIGWA",
+      "distinct_signers": 1653,
+      "function": "work",
+      "label": "Wasm db2c1429",
+      "root_calls": 2642
+    },
+    {
+      "auth_nodes": 0,
+      "contract": "CBGSBKYMYO6OMGHQXXNOBRGVUDFUDVC2XLC3SXON5R2SNXILR7XCKKY3",
+      "distinct_signers": 735,
+      "function": "harvest",
+      "label": "Wasm 70fe4469",
+      "root_calls": 984
+    },
+    {
+      "auth_nodes": 210,
+      "contract": "CCISQHV7UC3NZQ5WGADCNDYCG4FRWNKPISEGPLKADC3FFYEBG7QYIPRO",
+      "distinct_signers": 306,
+      "function": "batch_plant",
+      "label": "Wasm 515e6582",
+      "root_calls": 210
+    },
+    {
+      "auth_nodes": 196,
+      "contract": "CCISQHV7UC3NZQ5WGADCNDYCG4FRWNKPISEGPLKADC3FFYEBG7QYIPRO",
+      "distinct_signers": 114,
+      "function": "batch_work",
+      "label": "Wasm 515e6582",
+      "root_calls": 196
+    },
+    {
+      "auth_nodes": 14,
+      "contract": "CBBMQBNHB2FYVZYV7VNHOJHUMTFJLR4PUMRVQYNW6RHIKZO2NQMIBUCV",
+      "distinct_signers": 18,
+      "function": "swap",
+      "label": "Wasm 155a17b9",
+      "root_calls": 14
+    },
+    {
+      "auth_nodes": 16,
+      "contract": "CBQDHNBFBZYE4MKPWBSJOPIYLW4SFSXAXUTSXJN76GNKYVYPCKWC6QUK",
+      "distinct_signers": 11,
+      "function": "swap_chained",
+      "label": "Wasm c99539b0",
+      "root_calls": 16
+    },
+    {
+      "auth_nodes": 6,
+      "contract": "CA6PUJLBYKZKUEKLZJMKBZLEKP2OTHANDEOWSFF44FTSYLKQPIICCJBE",
+      "distinct_signers": 7,
+      "function": "swap",
+      "label": "Wasm d691135a",
+      "root_calls": 6
+    },
+    {
+      "auth_nodes": 7,
+      "contract": "CBIJBDNZNF4X35BJ4FFZWCDBSCKOP5NB4PLG4SNENRMLAPYG4P5FM6VN",
+      "distinct_signers": 7,
+      "function": "transfer",
+      "label": "Wasm f1107839",
+      "root_calls": 0
+    },
+    {
+      "auth_nodes": 6,
+      "contract": "CCNXGPE4AQCSNEBZO3XJDKKDI3CRLYMVS6UWBBTVDLALLWMJEXBORQ2A",
+      "distinct_signers": 6,
+      "function": "swap",
+      "label": "Wasm 22dff724",
+      "root_calls": 6
+    },
+    {
+      "auth_nodes": 5,
+      "contract": "CDVSQ4ILCIQAA7BIRKRPSHM2KWHFULGCPBSRC5MHPCJKQNOWRXTURVOT",
+      "distinct_signers": 6,
+      "function": "route_if",
+      "label": "Wasm d5af74fe",
+      "root_calls": 5
+    },
+    {
+      "auth_nodes": 3,
+      "contract": "CBUKYTAUPRPWZ76AENDIGCAYF2FUFKV37YZEPYJSYICMBPBPJBPKKZCR",
+      "distinct_signers": 6,
+      "function": "deposit",
+      "label": "Wasm d1340ea6",
+      "root_calls": 3
+    },
+    {
+      "auth_nodes": 0,
+      "contract": "CDL74RF5BLYR2YBLCCI7F5FB6TPSCLKEJUBSD2RSVWZ4YHF3VMFAIGWA",
+      "distinct_signers": 6,
+      "function": "harvest",
+      "label": "Wasm db2c1429",
+      "root_calls": 6
+    },
+    {
+      "auth_nodes": 3,
+      "contract": "CA6PUJLBYKZKUEKLZJMKBZLEKP2OTHANDEOWSFF44FTSYLKQPIICCJBE",
+      "distinct_signers": 4,
+      "function": "swap_strict_receive",
+      "label": "Wasm d691135a",
+      "root_calls": 3
+    },
+    {
+      "auth_nodes": 3,
+      "contract": "CBOOCGZSVRSZFRE4U2NWR2B4RXYVJWRCBTGOUD2JPI2TDJPWMTJX7FZP",
+      "distinct_signers": 4,
+      "function": "mint_batch",
+      "label": "Wasm 83bf0a7f",
+      "root_calls": 3
+    },
+    {
+      "auth_nodes": 2,
+      "contract": "CBUKYTAUPRPWZ76AENDIGCAYF2FUFKV37YZEPYJSYICMBPBPJBPKKZCR",
+      "distinct_signers": 4,
+      "function": "withdraw",
+      "label": "Wasm d1340ea6",
+      "root_calls": 2
+    },
+    {
+      "auth_nodes": 44,
+      "contract": "CA526Y2NQWGWVVQ7RFFPGAZMU66PSYJ3UC2MTVAV4ZU7OM5BOPHDXUSG",
+      "distinct_signers": 3,
+      "function": "write_prices",
+      "label": "Wasm f0ccdffc",
+      "root_calls": 44
+    },
+    {
+      "auth_nodes": 4,
+      "contract": "CCPGFQUTSEHDIQODRE3GJDNE64A35HZ32L7LPDN7GXOCIYNBJSMS6V6B",
+      "distinct_signers": 3,
+      "function": "swap_chained",
+      "label": "Wasm 131db85e",
+      "root_calls": 4
+    },
+    {
+      "auth_nodes": 4,
+      "contract": "CD2O2B6PWKXDVFXMHXHQMF25C4TWOSQAENA7DNFR5G27F5CHJ7AJP5F6",
+      "distinct_signers": 3,
+      "function": "swap",
+      "label": "Wasm d691135a",
+      "root_calls": 4
+    },
+    {
+      "auth_nodes": 4,
+      "contract": "CDUQGX32UCWCRBCV3F2VPRUCV4ATMSZ5VME6JYIDVEUVBCOVJDQIS7FT",
+      "distinct_signers": 3,
+      "function": "report",
+      "label": "Wasm c4c0d475",
+      "root_calls": 4
+    },
+    {
+      "auth_nodes": 3,
+      "contract": "CBB32NVBEKSXS5GHGCM44HLKLCYKTDAZCVEVLABDCF3G5KF5G3KBI6GZ",
+      "distinct_signers": 3,
+      "function": "report",
+      "label": "Wasm c4c0d475",
+      "root_calls": 3
+    },
+    {
+      "auth_nodes": 3,
+      "contract": "CDA3XS2HETVCW5GSRN3FH4X3YJ45IA6DNVSZTEOYDFGOCXQK4ZJG22JM",
+      "distinct_signers": 3,
+      "function": "submit_prices",
+      "label": "Wasm 5a579a63",
+      "root_calls": 3
+    },
+    {
+      "auth_nodes": 2,
+      "contract": "CCR2CH4GQVCZHG7CHFVMNANCK45CU5DVKXZIIITDZQAU3CEJZ7RQH2MQ",
+      "distinct_signers": 3,
+      "function": "swap",
+      "label": "Wasm 003710b3",
+      "root_calls": 2
+    },
+    {
+      "auth_nodes": 2,
+      "contract": "CA6XIZJXNW7ZTWGSA6VYQDTEUW3ZDAEPMA7YSONIQJZ4CWDIBZ5A2ZRF",
+      "distinct_signers": 3,
+      "function": "sm",
+      "label": "Wasm 4511ae15",
+      "root_calls": 1
+    },
+    {
+      "auth_nodes": 3,
+      "contract": "CAJJZSGMMM3PD7N33TAPHGBUGTB43OC73HVIK2L2G6BNGGGYOSSYBXBD",
+      "distinct_signers": 3,
+      "function": "submit",
+      "label": "Wasm a41fc53d",
+      "root_calls": 0
+    },
+    {
+      "auth_nodes": 3,
+      "contract": "CAUP7NFABXE5TJRL3FKTPMWRLC7IAXYDCTHQRFSCLR5TMGKHOOQO772J",
+      "distinct_signers": 3,
+      "function": "transfer",
+      "label": "Wasm f1107839",
+      "root_calls": 0
+    },
+    {
+      "auth_nodes": 2,
+      "contract": "CBGU4YF7RZR2JRYQ6YXYJCROX47FJ3GFRWQSJJEEF5NAWU2OO3NUSZIW",
+      "distinct_signers": 2,
+      "function": "withdraw_stream",
+      "label": "Wasm 154bacae",
+      "root_calls": 2
+    },
+    {
+      "auth_nodes": 2,
+      "contract": "CBOOCGZSVRSZFRE4U2NWR2B4RXYVJWRCBTGOUD2JPI2TDJPWMTJX7FZP",
+      "distinct_signers": 2,
+      "function": "safe_transfer",
+      "label": "Wasm 83bf0a7f",
+      "root_calls": 2
+    },
+    {
+      "auth_nodes": 2,
+      "contract": "CCA2ZJP5BVRXYTQH4FAGHCAUMRYCXVC4CRYC2NXHWMR7TIVX36U7F5HR",
+      "distinct_signers": 2,
+      "function": "deposit",
+      "label": "Wasm ae3409a4",
+      "root_calls": 2
+    },
+    {
+      "auth_nodes": 2,
+      "contract": "CCTRZALXT26HD52TSOVQ7LTP7QC5WRZ4QKTLYSMEQ4GVO77AHGDD24LF",
+      "distinct_signers": 2,
+      "function": "claim_withdrawal",
+      "label": "Wasm ccbade3f",
+      "root_calls": 2
+    }
+  ],
+  "top_wasm_functions": [
+    {
+      "auth_nodes": 8060,
+      "auth_nodes_with_other_arity": 0,
+      "contract": "CDL74RF5BLYR2YBLCCI7F5FB6TPSCLKEJUBSD2RSVWZ4YHF3VMFAIGWA",
+      "distinct_signers": 4183,
+      "examples": [
+        "aeaa264bcb85b8ba275fcf7d591e4a4e4f201055e9f6b65ec5971f858e835b10",
+        "edef4d3418c006e0ed304ddc15a5e1526368c8e9b52b5bdf4e95ffbbae885c5d",
+        "055265a1ba2395c8339cd9a4c763dab7c634d39abaabc3880877c5c69613ef8c"
+      ],
+      "function": "plant",
+      "inputs": [
+        {
+          "name": "farmer",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "amount",
+          "reaches_tuple_struct": false,
+          "type": "i128"
+        }
+      ],
+      "label": "Wasm db2c1429",
+      "root_calls": 2949,
+      "wasm_hash": "db2c14290d4964e3805f2527dd132939ba5fb3fccac56b30bfab8fd091011627"
+    },
+    {
+      "auth_nodes": 0,
+      "auth_nodes_with_other_arity": 0,
+      "contract": "CDL74RF5BLYR2YBLCCI7F5FB6TPSCLKEJUBSD2RSVWZ4YHF3VMFAIGWA",
+      "distinct_signers": 1653,
+      "examples": [
+        "66b6f20e78c8fadd989888a0f5b4e26084d7ae22a6d44786972589d7d105589a",
+        "5b13d28b050aaa0a590502c3376e388acd619685b53a5feeefd5afd2dced6564",
+        "b27d24c10042cf36f013a2e67b5f38a80992a1eed3d3fbd8f9403330b2f679f6"
+      ],
+      "function": "work",
+      "inputs": [
+        {
+          "name": "farmer",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "hash",
+          "reaches_tuple_struct": false,
+          "type": "bytes_n<32>"
+        },
+        {
+          "name": "nonce",
+          "reaches_tuple_struct": false,
+          "type": "u64"
+        }
+      ],
+      "label": "Wasm db2c1429",
+      "root_calls": 2642,
+      "wasm_hash": "db2c14290d4964e3805f2527dd132939ba5fb3fccac56b30bfab8fd091011627"
+    },
+    {
+      "auth_nodes": 0,
+      "auth_nodes_with_other_arity": 0,
+      "contract": "CBGSBKYMYO6OMGHQXXNOBRGVUDFUDVC2XLC3SXON5R2SNXILR7XCKKY3",
+      "distinct_signers": 735,
+      "examples": [
+        "b299efc96ee82f5311ebd5e50abd99c465a3b8dce9407c68750eb16c3429907b",
+        "da07e794b08accaf5b0e4c92f95ff158d5c86450d44d1b8313e243cd18463085",
+        "465c25d7fb42ba55006b06383c709d088a35ea93e5ea7ba9d47340795386bb03"
+      ],
+      "function": "harvest",
+      "inputs": [
+        {
+          "name": "farmer",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "pails",
+          "reaches_tuple_struct": false,
+          "type": "vec<u32>"
+        }
+      ],
+      "label": "Wasm 70fe4469",
+      "root_calls": 984,
+      "wasm_hash": "70fe44694c9fe6b0abc69a6da4858fc2aaba04fa10492a466a1d426d04ca8560"
+    },
+    {
+      "auth_nodes": 210,
+      "auth_nodes_with_other_arity": 0,
+      "contract": "CCISQHV7UC3NZQ5WGADCNDYCG4FRWNKPISEGPLKADC3FFYEBG7QYIPRO",
+      "distinct_signers": 306,
+      "examples": [
+        "8f94d8ce88be6baf790b16cf17e6e77aa5bae53ca7390a6aadfd2669459bd15e",
+        "9fbfebc34e376079688578ba467ee7030397f5bc57b9da42aececb5ce6d8ec55",
+        "ff95ead96b2287f79ce4da96cecc43706334d340df151bacc2f506b3a75acb98"
+      ],
+      "function": "batch_plant",
+      "inputs": [
+        {
+          "name": "invoker",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "kale_contract",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "farmers",
+          "reaches_tuple_struct": false,
+          "type": "vec<address>"
+        },
+        {
+          "name": "amounts",
+          "reaches_tuple_struct": false,
+          "type": "vec<i128>"
+        }
+      ],
+      "label": "Wasm 515e6582",
+      "root_calls": 210,
+      "wasm_hash": "515e6582a312d50c5069e755f73faba3f7af8c5402542ae46509c6d1c7772da9"
+    },
+    {
+      "auth_nodes": 196,
+      "auth_nodes_with_other_arity": 0,
+      "contract": "CCISQHV7UC3NZQ5WGADCNDYCG4FRWNKPISEGPLKADC3FFYEBG7QYIPRO",
+      "distinct_signers": 114,
+      "examples": [
+        "b49b560ee60a3c9046b7999225ed21e0e534cd6a64a759a197464d419a96d3df",
+        "13464b83bc928d934743cee7742700007c13d52f767a1c4fb96c849a5b3761a2",
+        "4c8f3c077e1305605cbf85662b3872115acd097c17cb04d8ed3ffc093cf84005"
+      ],
+      "function": "batch_work",
+      "inputs": [
+        {
+          "name": "invoker",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "kale_contract",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "farmers",
+          "reaches_tuple_struct": false,
+          "type": "vec<address>"
+        },
+        {
+          "name": "hashes",
+          "reaches_tuple_struct": false,
+          "type": "vec<bytes>"
+        },
+        {
+          "name": "nonces",
+          "reaches_tuple_struct": false,
+          "type": "vec<u64>"
+        }
+      ],
+      "label": "Wasm 515e6582",
+      "root_calls": 196,
+      "wasm_hash": "515e6582a312d50c5069e755f73faba3f7af8c5402542ae46509c6d1c7772da9"
+    },
+    {
+      "auth_nodes": 14,
+      "auth_nodes_with_other_arity": 0,
+      "contract": "CBBMQBNHB2FYVZYV7VNHOJHUMTFJLR4PUMRVQYNW6RHIKZO2NQMIBUCV",
+      "distinct_signers": 18,
+      "examples": [
+        "89a120ab3cabb27c02373892fc3b787d503982d33bd08c8c5dc095f8af61af6e",
+        "1755728a550243c7921689e954673d4cac023473d32d189007f791ba50091b82",
+        "1435c594bb8cee359402e441ac90a5be0d354d7becd0ef4f9f6397794645e690"
+      ],
+      "function": "swap",
+      "inputs": [
+        {
+          "name": "user",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "in_idx",
+          "reaches_tuple_struct": false,
+          "type": "u32"
+        },
+        {
+          "name": "out_idx",
+          "reaches_tuple_struct": false,
+          "type": "u32"
+        },
+        {
+          "name": "in_amount",
+          "reaches_tuple_struct": false,
+          "type": "u128"
+        },
+        {
+          "name": "out_min",
+          "reaches_tuple_struct": false,
+          "type": "u128"
+        }
+      ],
+      "label": "Wasm 155a17b9",
+      "root_calls": 14,
+      "wasm_hash": "155a17b9929ffb1f9e84bd6ef5c00a4d613c1ab5f4ad4c502d84515250cc2907"
+    },
+    {
+      "auth_nodes": 16,
+      "auth_nodes_with_other_arity": 0,
+      "contract": "CBQDHNBFBZYE4MKPWBSJOPIYLW4SFSXAXUTSXJN76GNKYVYPCKWC6QUK",
+      "distinct_signers": 11,
+      "examples": [
+        "70229328c15fdf7f39133818de8d07b8d7124ec0105441b3685593f7ccf86616",
+        "19905af58ee726eed1933e6d7ecd39129a22f2db4d915efe06a6a6dbffbd88dc",
+        "40aac7f4a9838a6e0c37ab0b260060e0c6e4aa5056b9389c0e594097e6eb3c49"
+      ],
+      "function": "swap_chained",
+      "inputs": [
+        {
+          "name": "user",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "swaps_chain",
+          "reaches_tuple_struct": false,
+          "type": "vec<tuple<vec<address>,bytes_n<32>,address>>"
+        },
+        {
+          "name": "token_in",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "in_amount",
+          "reaches_tuple_struct": false,
+          "type": "u128"
+        },
+        {
+          "name": "out_min",
+          "reaches_tuple_struct": false,
+          "type": "u128"
+        }
+      ],
+      "label": "Wasm c99539b0",
+      "root_calls": 16,
+      "wasm_hash": "c99539b023df4a28d7857d33ca4c915c2e20fec04f12b125132b84fbdf94dad3"
+    },
+    {
+      "auth_nodes": 6,
+      "auth_nodes_with_other_arity": 0,
+      "contract": "CA6PUJLBYKZKUEKLZJMKBZLEKP2OTHANDEOWSFF44FTSYLKQPIICCJBE",
+      "distinct_signers": 7,
+      "examples": [
+        "ebe8612f632989cb45c3593e84581e40689d31f27107a0f7dcaae26d17f4acde",
+        "42c19b324fd0d4c15a0a6c04e2223aa2ba9f889b52186bdcd0ca2cd2ebc5dd3e",
+        "9f6b52c35ae81b8f1fb3b36bf5b25646541b89ed06c11332b7db80fb48aca065"
+      ],
+      "function": "swap",
+      "inputs": [
+        {
+          "name": "user",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "in_idx",
+          "reaches_tuple_struct": false,
+          "type": "u32"
+        },
+        {
+          "name": "out_idx",
+          "reaches_tuple_struct": false,
+          "type": "u32"
+        },
+        {
+          "name": "in_amount",
+          "reaches_tuple_struct": false,
+          "type": "u128"
+        },
+        {
+          "name": "out_min",
+          "reaches_tuple_struct": false,
+          "type": "u128"
+        }
+      ],
+      "label": "Wasm d691135a",
+      "root_calls": 6,
+      "wasm_hash": "d691135aade93ff0f7c229e009cde042130a05124cf7202b03d11246b4f9b473"
+    },
+    {
+      "auth_nodes": 7,
+      "auth_nodes_with_other_arity": 0,
+      "contract": "CBIJBDNZNF4X35BJ4FFZWCDBSCKOP5NB4PLG4SNENRMLAPYG4P5FM6VN",
+      "distinct_signers": 7,
+      "examples": [],
+      "function": "transfer",
+      "inputs": [
+        {
+          "name": "from",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "to",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "amount",
+          "reaches_tuple_struct": false,
+          "type": "i128"
+        }
+      ],
+      "label": "Wasm f1107839",
+      "root_calls": 0,
+      "wasm_hash": "f11078394fd06b3992b4274611a7c47809707bdce61254cffa6dd40fcaad364f"
+    },
+    {
+      "auth_nodes": 6,
+      "auth_nodes_with_other_arity": 0,
+      "contract": "CCNXGPE4AQCSNEBZO3XJDKKDI3CRLYMVS6UWBBTVDLALLWMJEXBORQ2A",
+      "distinct_signers": 6,
+      "examples": [
+        "7340a69899fe42f28683465e8f9a03e1936f1e8020656ac5d35bb332ba106698",
+        "9f294e3ea91ffccf4f55a558064e0b66aa9dfa1081b47c333c6e1ce3a5305349",
+        "96a25baa8a7fa102c6f1bbcb0d8b3774dd15a7b2c3d916d5ccfd23313abb4f63"
+      ],
+      "function": "swap",
+      "inputs": [
+        {
+          "name": "user",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "in_idx",
+          "reaches_tuple_struct": false,
+          "type": "u32"
+        },
+        {
+          "name": "out_idx",
+          "reaches_tuple_struct": false,
+          "type": "u32"
+        },
+        {
+          "name": "in_amount",
+          "reaches_tuple_struct": false,
+          "type": "u128"
+        },
+        {
+          "name": "out_min",
+          "reaches_tuple_struct": false,
+          "type": "u128"
+        }
+      ],
+      "label": "Wasm 22dff724",
+      "root_calls": 6,
+      "wasm_hash": "22dff7242d2bc0ea4a4727b4b2cac33b188304d5945740ad24d8a33a5d22741e"
+    },
+    {
+      "auth_nodes": 5,
+      "auth_nodes_with_other_arity": 0,
+      "contract": "CDVSQ4ILCIQAA7BIRKRPSHM2KWHFULGCPBSRC5MHPCJKQNOWRXTURVOT",
+      "distinct_signers": 6,
+      "examples": [
+        "5889d45b852280a5599a6fc8000fbe4c3a7fd191388e0a464f6a6ed438dc337a",
+        "abaefdba9dbabfcffddd11c0d45ac485d0fa1f0146be8d28a337ef39e63804b7",
+        "47edcaac538f2bb680f79f41bc342044cc8b489e52e84dfdf493ff1b498696be"
+      ],
+      "function": "route_if",
+      "inputs": [
+        {
+          "name": "user",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "token_in",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "min_balance",
+          "reaches_tuple_struct": false,
+          "type": "i128"
+        },
+        {
+          "name": "token_out",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "routes",
+          "reaches_tuple_struct": false,
+          "type": "vec<udt:Route>"
+        }
+      ],
+      "label": "Wasm d5af74fe",
+      "root_calls": 5,
+      "wasm_hash": "d5af74fed6c0e39c8ab3a1a1e39b1ca85ceeb778321cde4fd24055974a532892"
+    },
+    {
+      "auth_nodes": 3,
+      "auth_nodes_with_other_arity": 0,
+      "contract": "CBUKYTAUPRPWZ76AENDIGCAYF2FUFKV37YZEPYJSYICMBPBPJBPKKZCR",
+      "distinct_signers": 6,
+      "examples": [
+        "b4972d0b8493ab26b17304d9bc34b632bd4496147e5fd1505af718c52ed7b59f",
+        "93d29a9c9e29d096559897dfa3e394a8e1c0c4c480aace34e6a2a1011e689e1e",
+        "00c71da1e11ea8f8faa64f165c5ab77c6a19f89a9edeef3c1ff468ab0f50612a"
+      ],
+      "function": "deposit",
+      "inputs": [
+        {
+          "name": "reserve",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "user",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "amount",
+          "reaches_tuple_struct": false,
+          "type": "i128"
+        }
+      ],
+      "label": "Wasm d1340ea6",
+      "root_calls": 3,
+      "wasm_hash": "d1340ea680c4bc45be21997554cb5d37421a9290bc20fa50f2ede79029a77f8d"
+    },
+    {
+      "auth_nodes": 0,
+      "auth_nodes_with_other_arity": 0,
+      "contract": "CDL74RF5BLYR2YBLCCI7F5FB6TPSCLKEJUBSD2RSVWZ4YHF3VMFAIGWA",
+      "distinct_signers": 6,
+      "examples": [
+        "3481380f06830e2a3fa65d4eb3ab8e726902b0064ab1d3fefddb47a12d9b4d79",
+        "675404c66f91911cccd316a53cf30f10fe0bb4807eb2551c01f6d3e16795465b",
+        "d8e08c42c7b441bbfc0478a3ef5507cb896ca26cfd5975dd91d219f24d5331bc"
+      ],
+      "function": "harvest",
+      "inputs": [
+        {
+          "name": "farmer",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "index",
+          "reaches_tuple_struct": false,
+          "type": "u32"
+        }
+      ],
+      "label": "Wasm db2c1429",
+      "root_calls": 6,
+      "wasm_hash": "db2c14290d4964e3805f2527dd132939ba5fb3fccac56b30bfab8fd091011627"
+    },
+    {
+      "auth_nodes": 3,
+      "auth_nodes_with_other_arity": 0,
+      "contract": "CA6PUJLBYKZKUEKLZJMKBZLEKP2OTHANDEOWSFF44FTSYLKQPIICCJBE",
+      "distinct_signers": 4,
+      "examples": [
+        "3d2961b0d84fa9f0021bb8f73e0dfcf8ee16aa8c0dfc5b04f4751dd80f90af92",
+        "e722a755539f1857e400f8f923deec7bd26d4b1da97ac74fc4f3ea336e4521c9",
+        "da3a0d13c3b4370caf6d81425962cc617fafbd15eae103798b0cc2c3972ea300"
+      ],
+      "function": "swap_strict_receive",
+      "inputs": [
+        {
+          "name": "user",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "in_idx",
+          "reaches_tuple_struct": false,
+          "type": "u32"
+        },
+        {
+          "name": "out_idx",
+          "reaches_tuple_struct": false,
+          "type": "u32"
+        },
+        {
+          "name": "out_amount",
+          "reaches_tuple_struct": false,
+          "type": "u128"
+        },
+        {
+          "name": "in_max",
+          "reaches_tuple_struct": false,
+          "type": "u128"
+        }
+      ],
+      "label": "Wasm d691135a",
+      "root_calls": 3,
+      "wasm_hash": "d691135aade93ff0f7c229e009cde042130a05124cf7202b03d11246b4f9b473"
+    },
+    {
+      "auth_nodes": 3,
+      "auth_nodes_with_other_arity": 0,
+      "contract": "CBOOCGZSVRSZFRE4U2NWR2B4RXYVJWRCBTGOUD2JPI2TDJPWMTJX7FZP",
+      "distinct_signers": 4,
+      "examples": [
+        "423202b5db72a16d48410b20714920401a5af7daee5036cc2b91828ee816abbe",
+        "873b60df38617125b96d8507fae8068ab5cec26a6dcd0c167b121b8e75067cca",
+        "430517eb941650b8d3bc8a5ae438d4ed1f947cf11373b8a13d8ed7b445ef4d0f"
+      ],
+      "function": "mint_batch",
+      "inputs": [
+        {
+          "name": "operations",
+          "reaches_tuple_struct": true,
+          "type": "vec<udt:MintBatchOperation>"
+        },
+        {
+          "name": "caller",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "idempotency_key",
+          "reaches_tuple_struct": false,
+          "type": "string"
+        }
+      ],
+      "label": "Wasm 83bf0a7f",
+      "root_calls": 3,
+      "wasm_hash": "83bf0a7fbe1502271f2e14d2a5a46c9cde1aa213be97616bd7c6b102b342692f"
+    },
+    {
+      "auth_nodes": 2,
+      "auth_nodes_with_other_arity": 0,
+      "contract": "CBUKYTAUPRPWZ76AENDIGCAYF2FUFKV37YZEPYJSYICMBPBPJBPKKZCR",
+      "distinct_signers": 4,
+      "examples": [
+        "541487829f67fd6bc269eef5bbc511f77166140b8add8f8afd9d5f34cac1f7f6",
+        "e670f72523f24eedf58c1ee70ebb1d2688e6dac21f84970aae8fbb59db35071c"
+      ],
+      "function": "withdraw",
+      "inputs": [
+        {
+          "name": "reserve",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "user",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "amount",
+          "reaches_tuple_struct": false,
+          "type": "i128"
+        }
+      ],
+      "label": "Wasm d1340ea6",
+      "root_calls": 2,
+      "wasm_hash": "d1340ea680c4bc45be21997554cb5d37421a9290bc20fa50f2ede79029a77f8d"
+    },
+    {
+      "auth_nodes": 44,
+      "auth_nodes_with_other_arity": 0,
+      "contract": "CA526Y2NQWGWVVQ7RFFPGAZMU66PSYJ3UC2MTVAV4ZU7OM5BOPHDXUSG",
+      "distinct_signers": 3,
+      "examples": [
+        "781911bc14b62de5ed994ed6e1d50a7a4eff9f4765505ef41d1a36e06c94fe01",
+        "de4d0077806402a53f9f0813910d5447c3ecd4239219fff3aecf249be4a23763",
+        "ff5751a6f802355f62c87642bbf309b4017ac4e9056bddb138d57bd5cb36959f"
+      ],
+      "function": "write_prices",
+      "inputs": [
+        {
+          "name": "updater",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "feed_ids",
+          "reaches_tuple_struct": false,
+          "type": "vec<string>"
+        },
+        {
+          "name": "payload",
+          "reaches_tuple_struct": false,
+          "type": "bytes"
+        }
+      ],
+      "label": "Wasm f0ccdffc",
+      "root_calls": 44,
+      "wasm_hash": "f0ccdffc29931abed6d77eef359450b183584103a3665be1f080f5f712b1542e"
+    },
+    {
+      "auth_nodes": 4,
+      "auth_nodes_with_other_arity": 0,
+      "contract": "CCPGFQUTSEHDIQODRE3GJDNE64A35HZ32L7LPDN7GXOCIYNBJSMS6V6B",
+      "distinct_signers": 3,
+      "examples": [
+        "0773c7339751b439e251e65bfa0a98bf9b9fa711f642f69eb38fe290aaa3c609",
+        "f9d9fc2620e6d0930f3796e8f7c0ea2d17f2e10e951898eadba2fd38934b297b",
+        "f5cad6552df37ed33f4d8eb12b32899c03abe85b673fe3e8ba2f374a175ae273"
+      ],
+      "function": "swap_chained",
+      "inputs": [
+        {
+          "name": "user",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "swaps_chain",
+          "reaches_tuple_struct": false,
+          "type": "vec<tuple<vec<address>,bytes_n<32>,address>>"
+        },
+        {
+          "name": "token_in",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "in_amount",
+          "reaches_tuple_struct": false,
+          "type": "u128"
+        },
+        {
+          "name": "out_min",
+          "reaches_tuple_struct": false,
+          "type": "u128"
+        },
+        {
+          "name": "fee_fraction",
+          "reaches_tuple_struct": false,
+          "type": "u32"
+        }
+      ],
+      "label": "Wasm 131db85e",
+      "root_calls": 4,
+      "wasm_hash": "131db85e62b0f7e3683bf4b5a6ae22b801d9acb2effd5cf3d78e9921b77b7c94"
+    },
+    {
+      "auth_nodes": 4,
+      "auth_nodes_with_other_arity": 0,
+      "contract": "CD2O2B6PWKXDVFXMHXHQMF25C4TWOSQAENA7DNFR5G27F5CHJ7AJP5F6",
+      "distinct_signers": 3,
+      "examples": [
+        "f7dfa0880d835959d506d27510d207f5b5bfe06fdfaa35e076876ec6ce8c9748",
+        "ff468848c48242c7e05c84e24af8adda2f23486c9a3f993659e7dc8a77a93fd0",
+        "68450424e22853cb52730010a9d8c5855d619a9e25a23b3e6652a8afa05a3c5b"
+      ],
+      "function": "swap",
+      "inputs": [
+        {
+          "name": "user",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "in_idx",
+          "reaches_tuple_struct": false,
+          "type": "u32"
+        },
+        {
+          "name": "out_idx",
+          "reaches_tuple_struct": false,
+          "type": "u32"
+        },
+        {
+          "name": "in_amount",
+          "reaches_tuple_struct": false,
+          "type": "u128"
+        },
+        {
+          "name": "out_min",
+          "reaches_tuple_struct": false,
+          "type": "u128"
+        }
+      ],
+      "label": "Wasm d691135a",
+      "root_calls": 4,
+      "wasm_hash": "d691135aade93ff0f7c229e009cde042130a05124cf7202b03d11246b4f9b473"
+    },
+    {
+      "auth_nodes": 4,
+      "auth_nodes_with_other_arity": 0,
+      "contract": "CDUQGX32UCWCRBCV3F2VPRUCV4ATMSZ5VME6JYIDVEUVBCOVJDQIS7FT",
+      "distinct_signers": 3,
+      "examples": [
+        "cb672f827ecab400c41a4aa758f703e5b78f34a0287e66e6869d3b96320b26d8",
+        "5780b59aca7a3427a3d65192d8c3ba0e9144c997474daa5274c318ef0cfd3d6a",
+        "b6eeedf1439b307f2c719bcabc4a23b8dfaaf4e309a53b66d19709f70620e753"
+      ],
+      "function": "report",
+      "inputs": [
+        {
+          "name": "transmitter",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "receiver",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "raw_report",
+          "reaches_tuple_struct": false,
+          "type": "bytes"
+        },
+        {
+          "name": "report_context",
+          "reaches_tuple_struct": false,
+          "type": "bytes"
+        },
+        {
+          "name": "signatures",
+          "reaches_tuple_struct": false,
+          "type": "vec<udt:Ed25519Signature>"
+        }
+      ],
+      "label": "Wasm c4c0d475",
+      "root_calls": 4,
+      "wasm_hash": "c4c0d4750e245d3a8e85dfd18abbef0c947dfc0e786e18510f796b8a4211c837"
+    },
+    {
+      "auth_nodes": 3,
+      "auth_nodes_with_other_arity": 0,
+      "contract": "CBB32NVBEKSXS5GHGCM44HLKLCYKTDAZCVEVLABDCF3G5KF5G3KBI6GZ",
+      "distinct_signers": 3,
+      "examples": [
+        "e49869cc64c6395c6c19280ab7b9d3c7deb4e1bfc1396daea1c6857e4c4042c5",
+        "16a3e3d1159ccd3f13036501d2059ce2cc165d196859a325d816f61bdc68ec97",
+        "e654a511f4e933861acf35d829a1afb6d09d1f81c5cb61d20661ee23c3b94b56"
+      ],
+      "function": "report",
+      "inputs": [
+        {
+          "name": "transmitter",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "receiver",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "raw_report",
+          "reaches_tuple_struct": false,
+          "type": "bytes"
+        },
+        {
+          "name": "report_context",
+          "reaches_tuple_struct": false,
+          "type": "bytes"
+        },
+        {
+          "name": "signatures",
+          "reaches_tuple_struct": false,
+          "type": "vec<udt:Ed25519Signature>"
+        }
+      ],
+      "label": "Wasm c4c0d475",
+      "root_calls": 3,
+      "wasm_hash": "c4c0d4750e245d3a8e85dfd18abbef0c947dfc0e786e18510f796b8a4211c837"
+    },
+    {
+      "auth_nodes": 3,
+      "auth_nodes_with_other_arity": 0,
+      "contract": "CDA3XS2HETVCW5GSRN3FH4X3YJ45IA6DNVSZTEOYDFGOCXQK4ZJG22JM",
+      "distinct_signers": 3,
+      "examples": [
+        "7067f188ba044bbe648fea89ee67fd0050d5991204f41187d0ae155efbc0398a",
+        "5f0424e400e8830b364b6e80d00428b215e7a10dff73cc272b322c82ebc48add",
+        "b68b9fd91dd280284d2c02d6a58ba42f80b560b88c493f644ec1d57e75475e3c"
+      ],
+      "function": "submit_prices",
+      "inputs": [
+        {
+          "name": "signer",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "feed_ids",
+          "reaches_tuple_struct": false,
+          "type": "vec<string>"
+        },
+        {
+          "name": "prices",
+          "reaches_tuple_struct": false,
+          "type": "vec<i128>"
+        },
+        {
+          "name": "package_timestamp",
+          "reaches_tuple_struct": false,
+          "type": "u64"
+        }
+      ],
+      "label": "Wasm 5a579a63",
+      "root_calls": 3,
+      "wasm_hash": "5a579a63eebef923becd21382eb49678c5119f8a23b6a0d0e9565a9b53d525f7"
+    },
+    {
+      "auth_nodes": 2,
+      "auth_nodes_with_other_arity": 0,
+      "contract": "CCR2CH4GQVCZHG7CHFVMNANCK45CU5DVKXZIIITDZQAU3CEJZ7RQH2MQ",
+      "distinct_signers": 3,
+      "examples": [
+        "10532bb526d955c4db59b6b06fd840299a58dd2df5a196babd1368a2db291f92",
+        "d55cf9f4191d39960f1d5122fc41bc5a43862cd3323d307f68dd94a6eac325f0"
+      ],
+      "function": "swap",
+      "inputs": [
+        {
+          "name": "sender",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "recipient",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "zero_for_one",
+          "reaches_tuple_struct": false,
+          "type": "bool"
+        },
+        {
+          "name": "amount_specified",
+          "reaches_tuple_struct": false,
+          "type": "i128"
+        },
+        {
+          "name": "sqrt_price_limit_x96",
+          "reaches_tuple_struct": false,
+          "type": "u256"
+        },
+        {
+          "name": "hints",
+          "reaches_tuple_struct": false,
+          "type": "udt:OracleHints"
+        }
+      ],
+      "label": "Wasm 003710b3",
+      "root_calls": 2,
+      "wasm_hash": "003710b383f9da7d650a7f719a7be479110266427817ebbed61d924505fcd7c7"
+    },
+    {
+      "auth_nodes": 2,
+      "auth_nodes_with_other_arity": 0,
+      "contract": "CA6XIZJXNW7ZTWGSA6VYQDTEUW3ZDAEPMA7YSONIQJZ4CWDIBZ5A2ZRF",
+      "distinct_signers": 3,
+      "examples": [
+        "e5a6af70d5fc0d08a68c7d22dee32fc32aa8074421a18127f8c95cb69f2f6800"
+      ],
+      "function": "sm",
+      "inputs": [
+        {
+          "name": "user",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "md",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "sm",
+          "reaches_tuple_struct": false,
+          "type": "bool"
+        },
+        {
+          "name": "mi",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "input_token",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "input_amt",
+          "reaches_tuple_struct": false,
+          "type": "i128"
+        },
+        {
+          "name": "to",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "output_token",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "out_amt_min",
+          "reaches_tuple_struct": false,
+          "type": "i128"
+        },
+        {
+          "name": "ops",
+          "reaches_tuple_struct": false,
+          "type": "vec<tuple<symbol,address,vec<address>,address,address>>"
+        }
+      ],
+      "label": "Wasm 4511ae15",
+      "root_calls": 1,
+      "wasm_hash": "4511ae15946c297cf689ae49781535ce60fe4db3eabe1c403f165aa9e657ba52"
+    },
+    {
+      "auth_nodes": 3,
+      "auth_nodes_with_other_arity": 0,
+      "contract": "CAJJZSGMMM3PD7N33TAPHGBUGTB43OC73HVIK2L2G6BNGGGYOSSYBXBD",
+      "distinct_signers": 3,
+      "examples": [],
+      "function": "submit",
+      "inputs": [
+        {
+          "name": "from",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "spender",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "to",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "requests",
+          "reaches_tuple_struct": false,
+          "type": "vec<udt:Request>"
+        }
+      ],
+      "label": "Wasm a41fc53d",
+      "root_calls": 0,
+      "wasm_hash": "a41fc53d6753b6c04eb15b021c55052366a4c8e0e21bc72700f461264ec1350e"
+    },
+    {
+      "auth_nodes": 3,
+      "auth_nodes_with_other_arity": 0,
+      "contract": "CAUP7NFABXE5TJRL3FKTPMWRLC7IAXYDCTHQRFSCLR5TMGKHOOQO772J",
+      "distinct_signers": 3,
+      "examples": [],
+      "function": "transfer",
+      "inputs": [
+        {
+          "name": "from",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "to",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "amount",
+          "reaches_tuple_struct": false,
+          "type": "i128"
+        }
+      ],
+      "label": "Wasm f1107839",
+      "root_calls": 0,
+      "wasm_hash": "f11078394fd06b3992b4274611a7c47809707bdce61254cffa6dd40fcaad364f"
+    },
+    {
+      "auth_nodes": 2,
+      "auth_nodes_with_other_arity": 0,
+      "contract": "CBGU4YF7RZR2JRYQ6YXYJCROX47FJ3GFRWQSJJEEF5NAWU2OO3NUSZIW",
+      "distinct_signers": 2,
+      "examples": [
+        "b682e0500f2dab4ab6e24b952aa887b49fa3cca56ce848b65462c39df7084aeb",
+        "3570b68663b5e77a213ff0105f0a07ad06e2916243ed33bb0e8a7284685a5f31"
+      ],
+      "function": "withdraw_stream",
+      "inputs": [
+        {
+          "name": "stream_id",
+          "reaches_tuple_struct": false,
+          "type": "bytes_n<32>"
+        },
+        {
+          "name": "caller",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        }
+      ],
+      "label": "Wasm 154bacae",
+      "root_calls": 2,
+      "wasm_hash": "154bacaec7240a212e3fe1c2fce5f8cb5e021bc9451f4705241670fdf3b768c1"
+    },
+    {
+      "auth_nodes": 2,
+      "auth_nodes_with_other_arity": 0,
+      "contract": "CBOOCGZSVRSZFRE4U2NWR2B4RXYVJWRCBTGOUD2JPI2TDJPWMTJX7FZP",
+      "distinct_signers": 2,
+      "examples": [
+        "fac11196c3f6af893a31df9548230437edfcd01bb153c6ff8978b89d085db46d",
+        "10115748f2d23d346de40610e2ac034aeec0de844b2d6da9404e727ea8fa2197"
+      ],
+      "function": "safe_transfer",
+      "inputs": [
+        {
+          "name": "from",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "to",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "amount",
+          "reaches_tuple_struct": false,
+          "type": "i128"
+        },
+        {
+          "name": "idempotency_key",
+          "reaches_tuple_struct": false,
+          "type": "string"
+        }
+      ],
+      "label": "Wasm 83bf0a7f",
+      "root_calls": 2,
+      "wasm_hash": "83bf0a7fbe1502271f2e14d2a5a46c9cde1aa213be97616bd7c6b102b342692f"
+    },
+    {
+      "auth_nodes": 2,
+      "auth_nodes_with_other_arity": 0,
+      "contract": "CCA2ZJP5BVRXYTQH4FAGHCAUMRYCXVC4CRYC2NXHWMR7TIVX36U7F5HR",
+      "distinct_signers": 2,
+      "examples": [
+        "1e331736e4a21c4ee2ddda3a55d35214e45f2e2b3d9899f240e40040a3e9d76c",
+        "05b207ec57aa8173038f5888f0eb9be9e65641de44d90e3644c4e23e3d883604"
+      ],
+      "function": "deposit",
+      "inputs": [
+        {
+          "name": "amounts_desired",
+          "reaches_tuple_struct": false,
+          "type": "vec<i128>"
+        },
+        {
+          "name": "amounts_min",
+          "reaches_tuple_struct": false,
+          "type": "vec<i128>"
+        },
+        {
+          "name": "from",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "invest",
+          "reaches_tuple_struct": false,
+          "type": "bool"
+        }
+      ],
+      "label": "Wasm ae3409a4",
+      "root_calls": 2,
+      "wasm_hash": "ae3409a4090bc087b86b4e9b444d2b8017ccd97b90b069d44d005ab9f8e1468b"
+    },
+    {
+      "auth_nodes": 2,
+      "auth_nodes_with_other_arity": 0,
+      "contract": "CCTRZALXT26HD52TSOVQ7LTP7QC5WRZ4QKTLYSMEQ4GVO77AHGDD24LF",
+      "distinct_signers": 2,
+      "examples": [
+        "ce60a1f409cc5490d45485ad21c99d5f871e0af6afb31da5bfb93450c24270c9",
+        "fa4db393be30d4875d3b4c9dfa50cf0e2e52244e3f6c229e773ce4f9aaaa4495"
+      ],
+      "function": "claim_withdrawal",
+      "inputs": [
+        {
+          "name": "user",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "amount",
+          "reaches_tuple_struct": false,
+          "type": "i128"
+        },
+        {
+          "name": "nonce",
+          "reaches_tuple_struct": false,
+          "type": "u64"
+        },
+        {
+          "name": "expires_at",
+          "reaches_tuple_struct": false,
+          "type": "u64"
+        },
+        {
+          "name": "signature",
+          "reaches_tuple_struct": false,
+          "type": "bytes_n<64>"
+        }
+      ],
+      "label": "Wasm ccbade3f",
+      "root_calls": 2,
+      "wasm_hash": "ccbade3fd924c5502188092526aa38be4ae517cd5f7d390f4cb793b7fdb5dc80"
+    },
+    {
+      "auth_nodes": 3,
+      "auth_nodes_with_other_arity": 0,
+      "contract": "CAAJYIESEIKI7KZV67MBSXPCRGKH5WY354WUS55H4UNBD35OSKYPZA7Q",
+      "distinct_signers": 2,
+      "examples": [],
+      "function": "swap",
+      "inputs": [
+        {
+          "name": "user",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "in_idx",
+          "reaches_tuple_struct": false,
+          "type": "u32"
+        },
+        {
+          "name": "out_idx",
+          "reaches_tuple_struct": false,
+          "type": "u32"
+        },
+        {
+          "name": "in_amount",
+          "reaches_tuple_struct": false,
+          "type": "u128"
+        },
+        {
+          "name": "out_min",
+          "reaches_tuple_struct": false,
+          "type": "u128"
+        }
+      ],
+      "label": "Wasm 155a17b9",
+      "root_calls": 0,
+      "wasm_hash": "155a17b9929ffb1f9e84bd6ef5c00a4d613c1ab5f4ad4c502d84515250cc2907"
+    },
+    {
+      "auth_nodes": 2,
+      "auth_nodes_with_other_arity": 0,
+      "contract": "CAMWBJX5K7XDPIEAMPHJZLIP4MF5MWB2SJKAEAFE56L2KE6UZWOTKKGO",
+      "distinct_signers": 2,
+      "examples": [
+        "3f2caaa3a62bff556b4b76163be1bb25465b90f42309f57d4c7f12d93e1fe062"
+      ],
+      "function": "execute",
+      "inputs": [
+        {
+          "name": "caller",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "trader",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "asset_in",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "amount_in",
+          "reaches_tuple_struct": false,
+          "type": "i128"
+        },
+        {
+          "name": "base_asset",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "min_final_balance",
+          "reaches_tuple_struct": false,
+          "type": "i128"
+        },
+        {
+          "name": "route",
+          "reaches_tuple_struct": false,
+          "type": "vec<udt:SwapStep>"
+        }
+      ],
+      "label": "Wasm aacd255d",
+      "root_calls": 1,
+      "wasm_hash": "aacd255de2b49962d997b1089163708e472d508e7fcfaea66da299f2f07c06ca"
+    },
+    {
+      "auth_nodes": 1,
+      "auth_nodes_with_other_arity": 0,
+      "contract": "CACSQWCMKG45TUHCQ3LXHOB7YEEJH4W376ZHQPXH2IZ3TE4NJHFZMCY7",
+      "distinct_signers": 2,
+      "examples": [
+        "b8fe358b06e48d6ed2e1df0a5dc02254261ba0dae59b35e467b470ef4f9a27d3"
+      ],
+      "function": "submit",
+      "inputs": [
+        {
+          "name": "from",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "spender",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "to",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "requests",
+          "reaches_tuple_struct": false,
+          "type": "vec<udt:Request>"
+        }
+      ],
+      "label": "Wasm 0e4f8f45",
+      "root_calls": 1,
+      "wasm_hash": "0e4f8f45b94e6b0d017a496ac5620ad0e3f866533cf45acd2b070bedda1e7356"
+    },
+    {
+      "auth_nodes": 1,
+      "auth_nodes_with_other_arity": 0,
+      "contract": "CB54JXWG3X77YFAFLYQMRUIMLAEP6XUBBWVQLQYVK2CEOA6PGNQUDRAO",
+      "distinct_signers": 2,
+      "examples": [
+        "81d23465eb3c853cf6fb0a2b7bb9b52bec625b3c80ed999771c0f6e9e0ef7b98"
+      ],
+      "function": "execute",
+      "inputs": [
+        {
+          "name": "executor",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "params",
+          "reaches_tuple_struct": false,
+          "type": "udt:ExecutionParams"
+        },
+        {
+          "name": "value_payer",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        }
+      ],
+      "label": "Wasm 6c993138",
+      "root_calls": 1,
+      "wasm_hash": "6c993138d89bccee8babf840cf59643bafe6a386aed117fb6aa5686fae352bc4"
+    },
+    {
+      "auth_nodes": 1,
+      "auth_nodes_with_other_arity": 0,
+      "contract": "CBAF4BHE4IBUZCR2HUOI7D6NCQT34R3EJUC3SLDSRICUQYHAWKTVJT33",
+      "distinct_signers": 2,
+      "examples": [
+        "193d0fd098e71b7dd60c1d34da30222d17e045bc8bd4d8858465c1fbfdcd7e23"
+      ],
+      "function": "swap_if",
+      "inputs": [
+        {
+          "name": "user",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "expect_asset",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "expect_min_balance",
+          "reaches_tuple_struct": false,
+          "type": "i128"
+        },
+        {
+          "name": "pool",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "token_in",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "in_idx",
+          "reaches_tuple_struct": false,
+          "type": "u32"
+        },
+        {
+          "name": "out_idx",
+          "reaches_tuple_struct": false,
+          "type": "u32"
+        },
+        {
+          "name": "in_amount",
+          "reaches_tuple_struct": false,
+          "type": "u128"
+        },
+        {
+          "name": "out_min",
+          "reaches_tuple_struct": false,
+          "type": "u128"
+        }
+      ],
+      "label": "Wasm 196c8249",
+      "root_calls": 1,
+      "wasm_hash": "196c8249a203dcdc1fd4e7381472cb37a960adaf6d2f1c7a069b93f3bdea68a2"
+    },
+    {
+      "auth_nodes": 1,
+      "auth_nodes_with_other_arity": 0,
+      "contract": "CBGHLRSX5D5YMBPNK4ZGMUTJUHFIT7YGXGJURM5LFNZ7B6WNSXLGS26M",
+      "distinct_signers": 2,
+      "examples": [
+        "2271919584630ca77661e784fd4f09cf20da51996e06b5412aed89699e75cd79"
+      ],
+      "function": "grant_role_batch",
+      "inputs": [
+        {
+          "name": "caller",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "users",
+          "reaches_tuple_struct": false,
+          "type": "vec<address>"
+        },
+        {
+          "name": "role",
+          "reaches_tuple_struct": false,
+          "type": "symbol"
+        }
+      ],
+      "label": "Wasm f4de70f6",
+      "root_calls": 1,
+      "wasm_hash": "f4de70f678124ba1f17642e07b7a06355deb468e0df573b8897269258fb0ff1a"
+    },
+    {
+      "auth_nodes": 19,
+      "auth_nodes_with_other_arity": 0,
+      "contract": "CCG5EWFY2KCWWYYEIUMIRG6WSAQFLDR5QE5FMCWY25N36XA5GYTCPQWR",
+      "distinct_signers": 1,
+      "examples": [
+        "d9c0f63711f3b8b6d0ec0182ddd665a198e0a4fcc21ea844f60ee4fdc1dd2b37",
+        "2c364efbe39bd0e791c93c1d1af138f3772e1aabbb852d90e624cbc899b1c6d1",
+        "cf89b423a135be5fbb0229be320bcbbab567157b9316ec0213d89c02cfaabda8"
+      ],
+      "function": "liquidate_asset",
+      "inputs": [
+        {
+          "name": "executor",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "statement_ids",
+          "reaches_tuple_struct": false,
+          "type": "vec<string>"
+        },
+        {
+          "name": "assets",
+          "reaches_tuple_struct": false,
+          "type": "vec<vec<address>>"
+        },
+        {
+          "name": "max_statements_cents",
+          "reaches_tuple_struct": false,
+          "type": "option<vec<option<i128>>>"
+        }
+      ],
+      "label": "Wasm 84a88013",
+      "root_calls": 19,
+      "wasm_hash": "84a88013828d4c4f4e4f5d0fa2f686050d69889384a044eab3ec4b1169f810ea"
+    },
+    {
+      "auth_nodes": 19,
+      "auth_nodes_with_other_arity": 0,
+      "contract": "CCG5EWFY2KCWWYYEIUMIRG6WSAQFLDR5QE5FMCWY25N36XA5GYTCPQWR",
+      "distinct_signers": 1,
+      "examples": [
+        "8c47a05c8675800b038cf63b9988a4502c9555a8223ae9b10639105643d605cc",
+        "0909c5dd3fe5888974c4ac4d395b44351bf15e5059e22a743f77406e7a1cb570",
+        "2dcfba06e6a213dce442eb68eeda9300e14e23b4692a528d7c6b633746d871f0"
+      ],
+      "function": "publish_statements",
+      "inputs": [
+        {
+          "name": "publisher",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "collaterals",
+          "reaches_tuple_struct": false,
+          "type": "vec<address>"
+        },
+        {
+          "name": "statement_ids",
+          "reaches_tuple_struct": false,
+          "type": "vec<string>"
+        },
+        {
+          "name": "team_ids",
+          "reaches_tuple_struct": false,
+          "type": "vec<string>"
+        },
+        {
+          "name": "closing_account_balance_cents",
+          "reaches_tuple_struct": false,
+          "type": "vec<i128>"
+        },
+        {
+          "name": "liquidatable_afters",
+          "reaches_tuple_struct": false,
+          "type": "vec<u64>"
+        }
+      ],
+      "label": "Wasm 84a88013",
+      "root_calls": 19,
+      "wasm_hash": "84a88013828d4c4f4e4f5d0fa2f686050d69889384a044eab3ec4b1169f810ea"
+    },
+    {
+      "auth_nodes": 8,
+      "auth_nodes_with_other_arity": 0,
+      "contract": "CDW44DSP5EQBFC2IC5ZIRFC5WIZDMKL34IUFI6FZ6TIE446C6YAT5YTS",
+      "distinct_signers": 1,
+      "examples": [
+        "bd5d76a51052ca08fb42a11e5ae5bd9c4a28f37dd224be50644f9ccd764b4690",
+        "187ad2ba4650cd9be4bffa654d39875507c61d1d6cc5179c5909b82174ee599e",
+        "14d9b4be76d3c8f830c9adaf9fde197743827376145f61a4d25b320b576a0318"
+      ],
+      "function": "set_price",
+      "inputs": [
+        {
+          "name": "price_updater",
+          "reaches_tuple_struct": false,
+          "type": "address"
+        },
+        {
+          "name": "prices",
+          "reaches_tuple_struct": false,
+          "type": "vec<udt:UpdatePrice>"
+        }
+      ],
+      "label": "Wasm 05a168e4",
+      "root_calls": 8,
+      "wasm_hash": "05a168e4cd480e597e486080c6b5f793680540292cb4753a6b4d29c7cca6693d"
+    }
+  ],
+  "transactions": 36918
+}

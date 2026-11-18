@@ -1,0 +1,24 @@
+Swap tokens
+Contract           CCPGFQUTSEHDIQODRE3GJDNE64A35HZ32L7LPDN7GXOCIYNBJSMS6V6B
+Function           swap_chained
+You pay            1 XLM
+Min. received      2.7796236 XRF
+Account            GDM22NKY7E67YQ25HDWZFQCNN3XUITQDXAWC5RAIUTCEJUQMJRNW5DHK
+Fee                0%
++2 more parameters (raw view)
+
+Authorization entry 1: the operation's source account
+  Swap tokens
+  Contract           CCPGFQUTSEHDIQODRE3GJDNE64A35HZ32L7LPDN7GXOCIYNBJSMS6V6B
+  Function           swap_chained
+  You pay            1 XLM
+  Min. received      2.7796236 XRF
+  Account            GDM22NKY7E67YQ25HDWZFQCNN3XUITQDXAWC5RAIUTCEJUQMJRNW5DHK
+  Fee                0%
+  +2 more parameters (raw view)
+    Send tokens
+    Contract           CAS3J7GYLGXMF6TDJBBYYSE3HQ6BBSMLNUQ34T6TZMYMW2EVH34XOWMA
+    Function           transfer
+    Amount             1 XLM
+    Recipient          CCPGFQUTSEHDIQODRE3GJDNE64A35HZ32L7LPDN7GXOCIYNBJSMS6V6B
+    From               GDM22NKY7E67YQ25HDWZFQCNN3XUITQDXAWC5RAIUTCEJUQMJRNW5DHK

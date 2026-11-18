@@ -1,0 +1,81 @@
+{
+  "id": "hostile-symbol",
+  "title": "A token whose own symbol carries a right-to-left override",
+  "draft_sections": [
+    "3.1"
+  ],
+  "invocation": {
+    "contract_address": "CADRAEVL5FJLLBHKOC2UAOUMNORGMXP2BNVHSLIBJGKTIIVKCWSIRJMC",
+    "function_name": "transfer",
+    "args": [
+      {
+        "address": "GAXK4ABJ673Y2PJ2HFOHSA2Z3BQ532KLWAWYCGKAVFDUBBKXUTJE555M"
+      },
+      {
+        "address": "GBHIYTQKRY23I5QT3EO54YNC657BMUAQN5T2YKMOLHAVY5UURATCS2XH"
+      },
+      {
+        "i128": "250000000"
+      }
+    ]
+  },
+  "contracts": {
+    "CADRAEVL5FJLLBHKOC2UAOUMNORGMXP2BNVHSLIBJGKTIIVKCWSIRJMC": {
+      "kind": "wasm",
+      "wasm_hash": "1eb6829e25a4b88bf515eb344de595405c19938ea88034669bc5ac8869c03a3e"
+    }
+  },
+  "tokens": {
+    "CADRAEVL5FJLLBHKOC2UAOUMNORGMXP2BNVHSLIBJGKTIIVKCWSIRJMC": {
+      "decimals": 7,
+      "symbol": "USD‮CTEST",
+      "source": "contract"
+    }
+  },
+  "descriptors": [
+    "descriptors/crafted/token.json"
+  ],
+  "notes": [
+    "The symbol returned by the token contains U+202E. §3.1 says it MUST NOT, without saying what the wallet shows instead; here it is treated as unresolved, so the contract ID stands in its place (§3.1's rule for a missing symbol)."
+  ],
+  "expected": {
+    "operations": [
+      {
+        "invocation": {
+          "contract": "CADRAEVL5FJLLBHKOC2UAOUMNORGMXP2BNVHSLIBJGKTIIVKCWSIRJMC",
+          "described": true,
+          "fields": [
+            {
+              "label": "Amount",
+              "value": "25 CADRAEVL5FJLLBHKOC2UAOUMNORGMXP2BNVHSLIBJGKTIIVKCWSIRJMC (unverified)"
+            },
+            {
+              "label": "Recipient",
+              "value": "GBHIYTQKRY23I5QT3EO54YNC657BMUAQN5T2YKMOLHAVY5UURATCS2XH"
+            },
+            {
+              "label": "From",
+              "value": "GAXK4ABJ673Y2PJ2HFOHSA2Z3BQ532KLWAWYCGKAVFDUBBKXUTJE555M"
+            }
+          ],
+          "function": "transfer",
+          "intent": "Send tokens",
+          "raw": [
+            {
+              "label": "from",
+              "value": "GAXK4ABJ673Y2PJ2HFOHSA2Z3BQ532KLWAWYCGKAVFDUBBKXUTJE555M"
+            },
+            {
+              "label": "to",
+              "value": "GBHIYTQKRY23I5QT3EO54YNC657BMUAQN5T2YKMOLHAVY5UURATCS2XH"
+            },
+            {
+              "label": "amount",
+              "value": "250000000"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

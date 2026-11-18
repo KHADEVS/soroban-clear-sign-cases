@@ -1,0 +1,81 @@
+{
+  "id": "share-token-approve",
+  "title": "The draft's SEP-41 example: approve on the Aquarius share token",
+  "draft_sections": [
+    "3.1",
+    "5.1"
+  ],
+  "invocation": {
+    "contract_address": "CDXRIV6XHJWJXCFCP7CGPPQCLQSVMJ64UOOJY2XLCFAOMF6OUFEH2VDD",
+    "function_name": "approve",
+    "args": [
+      {
+        "address": "GAPLH44AAHKAAALNO6XJWSMH3MHVBKGC35COTRLVFH7X53746M4R3DN2"
+      },
+      {
+        "address": "GA24PT2XQKULOQN3RUIHQ7FPTIZX44TIVKITSJ6WMGU7PSKXXK7PDMOZ"
+      },
+      {
+        "i128": "1000000000"
+      },
+      {
+        "u32": 65623765
+      }
+    ]
+  },
+  "descriptors": [
+    "descriptors/draft/sep41-share-token.json"
+  ],
+  "notes": [
+    "Crafted call, real contract: the draft's descriptor checked against the spec of Wasm 72eb5d52…, read from Mainnet (the fourth input is expiration_ledger, as the draft says).",
+    "The draft's example shows \"100 EXT\" for a made-up symbol. Here decimals and symbol come from the token's own metadata (POOL), so §3.1's SHOULD applies and the amount is marked unverified."
+  ],
+  "expected": {
+    "operations": [
+      {
+        "invocation": {
+          "contract": "CDXRIV6XHJWJXCFCP7CGPPQCLQSVMJ64UOOJY2XLCFAOMF6OUFEH2VDD",
+          "described": true,
+          "fields": [
+            {
+              "label": "Spender",
+              "value": "GA24PT2XQKULOQN3RUIHQ7FPTIZX44TIVKITSJ6WMGU7PSKXXK7PDMOZ"
+            },
+            {
+              "label": "Allowance",
+              "value": "100 POOL (unverified)"
+            },
+            {
+              "label": "Expires (ledger)",
+              "value": "65623765"
+            },
+            {
+              "label": "Owner",
+              "value": "GAPLH44AAHKAAALNO6XJWSMH3MHVBKGC35COTRLVFH7X53746M4R3DN2"
+            }
+          ],
+          "function": "approve",
+          "intent": "Approve token spending",
+          "raw": [
+            {
+              "label": "from",
+              "value": "GAPLH44AAHKAAALNO6XJWSMH3MHVBKGC35COTRLVFH7X53746M4R3DN2"
+            },
+            {
+              "label": "spender",
+              "value": "GA24PT2XQKULOQN3RUIHQ7FPTIZX44TIVKITSJ6WMGU7PSKXXK7PDMOZ"
+            },
+            {
+              "label": "amount",
+              "value": "1000000000"
+            },
+            {
+              "label": "expiration_ledger",
+              "value": "65623765"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

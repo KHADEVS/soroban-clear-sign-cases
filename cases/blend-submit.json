@@ -1,0 +1,141 @@
+{
+  "id": "blend-submit",
+  "title": "A lending submit with a vector of request structs",
+  "draft_sections": [
+    "2.1",
+    "3.1",
+    "3.6",
+    "4.4",
+    "5.1",
+    "5.2"
+  ],
+  "transaction": "real/blend-submit.json",
+  "descriptors": [
+    "descriptors/crafted/blend-submit.json"
+  ],
+  "notes": [
+    "Mainnet transaction b8fe358b…27d3 on a pool with Blend's submit interface: repay 5003.0001282 XLM, withdraw 3035.9887324 USDC of collateral. Request is a named struct, so paths like [\"requests\", 0, \"amount\"] work.",
+    "The enum values are Blend's RequestType (blend-contracts-v2, pool/src/pool/actions.rs: 0 Supply … 5 Repay). The draft's §3.6 example maps \"2\" to \"Supply\"; in Blend, 2 is SupplyCollateral and 0 is Supply.",
+    "The descriptor lists three request positions; the call has two, so the third one is omitted under §4.4 and counted in the omission line. auth is left false: we did not review the source, so the authorization node stays raw (it also uses legacy credentials)."
+  ],
+  "expected": {
+    "operations": [
+      {
+        "invocation": {
+          "contract": "CACSQWCMKG45TUHCQ3LXHOB7YEEJH4W376ZHQPXH2IZ3TE4NJHFZMCY7",
+          "described": true,
+          "fields": [
+            {
+              "label": "Action 1",
+              "value": "Repay"
+            },
+            {
+              "label": "Amount 1",
+              "value": "5003.0001282 XLM"
+            },
+            {
+              "label": "Action 2",
+              "value": "Withdraw collateral"
+            },
+            {
+              "label": "Amount 2",
+              "value": "3035.9887324 USDC"
+            },
+            {
+              "label": "Account",
+              "value": "GBOT34TBVIIOXU3YIWU4ZA7H44EIXTUCHMNB6J5QMRKSU3M4R3HCDPLR"
+            },
+            {
+              "label": "Pays from",
+              "value": "GBOT34TBVIIOXU3YIWU4ZA7H44EIXTUCHMNB6J5QMRKSU3M4R3HCDPLR"
+            },
+            {
+              "label": "Sends to",
+              "value": "GBOT34TBVIIOXU3YIWU4ZA7H44EIXTUCHMNB6J5QMRKSU3M4R3HCDPLR"
+            }
+          ],
+          "function": "submit",
+          "intent": "Update lending position",
+          "omitted": 2,
+          "raw": [
+            {
+              "label": "from",
+              "value": "GBOT34TBVIIOXU3YIWU4ZA7H44EIXTUCHMNB6J5QMRKSU3M4R3HCDPLR"
+            },
+            {
+              "label": "spender",
+              "value": "GBOT34TBVIIOXU3YIWU4ZA7H44EIXTUCHMNB6J5QMRKSU3M4R3HCDPLR"
+            },
+            {
+              "label": "to",
+              "value": "GBOT34TBVIIOXU3YIWU4ZA7H44EIXTUCHMNB6J5QMRKSU3M4R3HCDPLR"
+            },
+            {
+              "label": "requests",
+              "value": "{\"vec\":[{\"map\":[{\"key\":{\"symbol\":\"address\"},\"val\":{\"address\":\"CAS3J7GYLGXMF6TDJBBYYSE3HQ6BBSMLNUQ34T6TZMYMW2EVH34XOWMA\"}},{\"key\":{\"symbol\":\"amount\"},\"val\":{\"i128\":\"50030001282\"}},{\"key\":{\"symbol\":\"request_type\"},\"val\":{\"u32\":5}}]},{\"map\":[{\"key\":{\"symbol\":\"address\"},\"val\":{\"address\":\"CCW67TSZV3SSS2HXMBQ5JFGCKJNXKZM7UQUWUZPUTHXSTZLEO7SJMI75\"}},{\"key\":{\"symbol\":\"amount\"},\"val\":{\"i128\":\"30359887324\"}},{\"key\":{\"symbol\":\"request_type\"},\"val\":{\"u32\":3}}]}]}"
+            }
+          ]
+        },
+        "auth": [
+          {
+            "credentials": {
+              "address": "GBOT34TBVIIOXU3YIWU4ZA7H44EIXTUCHMNB6J5QMRKSU3M4R3HCDPLR",
+              "kind": "address (legacy)",
+              "signature_expiration_ledger": 65467968
+            },
+            "tree": {
+              "display": {
+                "contract": "CACSQWCMKG45TUHCQ3LXHOB7YEEJH4W376ZHQPXH2IZ3TE4NJHFZMCY7",
+                "described": false,
+                "function": "submit",
+                "not_described": "legacy SOROBAN_CREDENTIALS_ADDRESS: out of scope",
+                "raw": [
+                  {
+                    "label": "arg 0",
+                    "value": "GBOT34TBVIIOXU3YIWU4ZA7H44EIXTUCHMNB6J5QMRKSU3M4R3HCDPLR"
+                  },
+                  {
+                    "label": "arg 1",
+                    "value": "GBOT34TBVIIOXU3YIWU4ZA7H44EIXTUCHMNB6J5QMRKSU3M4R3HCDPLR"
+                  },
+                  {
+                    "label": "arg 2",
+                    "value": "GBOT34TBVIIOXU3YIWU4ZA7H44EIXTUCHMNB6J5QMRKSU3M4R3HCDPLR"
+                  },
+                  {
+                    "label": "arg 3",
+                    "value": "{\"vec\":[{\"map\":[{\"key\":{\"symbol\":\"address\"},\"val\":{\"address\":\"CAS3J7GYLGXMF6TDJBBYYSE3HQ6BBSMLNUQ34T6TZMYMW2EVH34XOWMA\"}},{\"key\":{\"symbol\":\"amount\"},\"val\":{\"i128\":\"50030001282\"}},{\"key\":{\"symbol\":\"request_type\"},\"val\":{\"u32\":5}}]},{\"map\":[{\"key\":{\"symbol\":\"address\"},\"val\":{\"address\":\"CCW67TSZV3SSS2HXMBQ5JFGCKJNXKZM7UQUWUZPUTHXSTZLEO7SJMI75\"}},{\"key\":{\"symbol\":\"amount\"},\"val\":{\"i128\":\"30359887324\"}},{\"key\":{\"symbol\":\"request_type\"},\"val\":{\"u32\":3}}]}]}"
+                  }
+                ]
+              },
+              "sub_invocations": [
+                {
+                  "display": {
+                    "contract": "CAS3J7GYLGXMF6TDJBBYYSE3HQ6BBSMLNUQ34T6TZMYMW2EVH34XOWMA",
+                    "described": false,
+                    "function": "transfer",
+                    "not_described": "legacy SOROBAN_CREDENTIALS_ADDRESS: out of scope",
+                    "raw": [
+                      {
+                        "label": "arg 0",
+                        "value": "GBOT34TBVIIOXU3YIWU4ZA7H44EIXTUCHMNB6J5QMRKSU3M4R3HCDPLR"
+                      },
+                      {
+                        "label": "arg 1",
+                        "value": "CACSQWCMKG45TUHCQ3LXHOB7YEEJH4W376ZHQPXH2IZ3TE4NJHFZMCY7"
+                      },
+                      {
+                        "label": "arg 2",
+                        "value": "50030001282"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

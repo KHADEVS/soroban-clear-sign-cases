@@ -1,0 +1,133 @@
+{
+  "id": "auth-args-differ",
+  "title": "stellar/freighter#2196 reconstructed: the authorization carries other arguments",
+  "draft_sections": [
+    "2",
+    "4.4",
+    "5.2"
+  ],
+  "invocation": {
+    "contract_address": "CAACULRZ2P264FJ2N5BCCZ3NLJFD5XCGUP2Q35XNJZWK2OVNCNQBKC3X",
+    "function_name": "claim",
+    "args": [
+      {
+        "address": "GAXK4ABJ673Y2PJ2HFOHSA2Z3BQ532KLWAWYCGKAVFDUBBKXUTJE555M"
+      },
+      {
+        "u64": "7"
+      }
+    ]
+  },
+  "auth": [
+    {
+      "credentials": {
+        "address_v2": {
+          "address": "GAXK4ABJ673Y2PJ2HFOHSA2Z3BQ532KLWAWYCGKAVFDUBBKXUTJE555M",
+          "nonce": "1",
+          "signature_expiration_ledger": 65600000,
+          "signature": "void"
+        }
+      },
+      "root_invocation": {
+        "function": {
+          "contract_fn": {
+            "contract_address": "CAACULRZ2P264FJ2N5BCCZ3NLJFD5XCGUP2Q35XNJZWK2OVNCNQBKC3X",
+            "function_name": "claim",
+            "args": [
+              {
+                "address": "CCGLOJGKOQ2PFAU2JFAY6X66PZOBOP7DCVHFTRJ37E2II3Z6CRFLVVGW"
+              },
+              {
+                "u64": "7"
+              }
+            ]
+          }
+        },
+        "sub_invocations": []
+      }
+    }
+  ],
+  "contracts": {
+    "CAACULRZ2P264FJ2N5BCCZ3NLJFD5XCGUP2Q35XNJZWK2OVNCNQBKC3X": {
+      "kind": "wasm",
+      "wasm_hash": "fc79f2db92c11896dbd3c06be088c10a7eb050be4b6104985cf8895095a30cbd"
+    }
+  },
+  "descriptors": [
+    "descriptors/crafted/claim.json"
+  ],
+  "notes": [
+    "Reconstruction of the issue's shape: the call takes (from: Address, id: u64) and its authorization carries (token: Address, id: u64). The real transaction (eca9efdd…18af) is older than the public Horizon history (SDF's starts at ledger 59,240,161), so the function name and addresses here are made up.",
+    "With auth wrongly set to true, the argument check passes (same arity, same types) and the token contract is labelled \"From\": the limitation the draft documents.",
+    "The entry's credentials name the authorizer (the user), and the field labelled From holds a contract that is not the user. A rule that checks the authorizer-naming field against the credential address would catch this case, at the root and in sub-invocations alike, because every node of an entry is authorized by the same address."
+  ],
+  "expected": {
+    "operations": [
+      {
+        "invocation": {
+          "contract": "CAACULRZ2P264FJ2N5BCCZ3NLJFD5XCGUP2Q35XNJZWK2OVNCNQBKC3X",
+          "described": true,
+          "fields": [
+            {
+              "label": "From",
+              "value": "GAXK4ABJ673Y2PJ2HFOHSA2Z3BQ532KLWAWYCGKAVFDUBBKXUTJE555M"
+            },
+            {
+              "label": "ID",
+              "value": "7"
+            }
+          ],
+          "function": "claim",
+          "intent": "Claim",
+          "raw": [
+            {
+              "label": "from",
+              "value": "GAXK4ABJ673Y2PJ2HFOHSA2Z3BQ532KLWAWYCGKAVFDUBBKXUTJE555M"
+            },
+            {
+              "label": "id",
+              "value": "7"
+            }
+          ]
+        }
+      }
+    ],
+    "standalone_auth": [
+      {
+        "credentials": {
+          "address": "GAXK4ABJ673Y2PJ2HFOHSA2Z3BQ532KLWAWYCGKAVFDUBBKXUTJE555M",
+          "kind": "address_v2",
+          "signature_expiration_ledger": 65600000
+        },
+        "tree": {
+          "display": {
+            "contract": "CAACULRZ2P264FJ2N5BCCZ3NLJFD5XCGUP2Q35XNJZWK2OVNCNQBKC3X",
+            "described": true,
+            "fields": [
+              {
+                "label": "From",
+                "value": "CCGLOJGKOQ2PFAU2JFAY6X66PZOBOP7DCVHFTRJ37E2II3Z6CRFLVVGW"
+              },
+              {
+                "label": "ID",
+                "value": "7"
+              }
+            ],
+            "function": "claim",
+            "intent": "Claim",
+            "raw": [
+              {
+                "label": "arg 0",
+                "value": "CCGLOJGKOQ2PFAU2JFAY6X66PZOBOP7DCVHFTRJ37E2II3Z6CRFLVVGW"
+              },
+              {
+                "label": "arg 1",
+                "value": "7"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

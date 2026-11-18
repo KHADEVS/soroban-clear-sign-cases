@@ -1,0 +1,59 @@
+{
+  "id": "sac-impersonation",
+  "title": "A contract presented as the USDC SAC whose asset does not hash to it",
+  "draft_sections": [
+    "5.3",
+    "6"
+  ],
+  "invocation": {
+    "contract_address": "CBFWQUVJMK7AEEGB2NJAE5KIHEJWOK4EZ5FWKCHE6VIRI53ZGPM5KQW6",
+    "function_name": "transfer",
+    "args": [
+      {
+        "address": "GAXK4ABJ673Y2PJ2HFOHSA2Z3BQ532KLWAWYCGKAVFDUBBKXUTJE555M"
+      },
+      {
+        "address": "GB46FU6LDIONFP2YMBEIINFRLREGDKWWAWLNESNZCGEME5J7KEFCDLFV"
+      },
+      {
+        "i128": "100000000"
+      }
+    ]
+  },
+  "contracts": {
+    "CBFWQUVJMK7AEEGB2NJAE5KIHEJWOK4EZ5FWKCHE6VIRI53ZGPM5KQW6": {
+      "kind": "stellar_asset",
+      "asset": "USDC:GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN"
+    }
+  },
+  "descriptors": [],
+  "notes": [
+    "The resolution says StellarAsset with the USDC asset, but that asset hashes to CCW67…MI75, not to this contract. §5.3 requires the hash check, so nothing is described and no symbol is shown."
+  ],
+  "expected": {
+    "operations": [
+      {
+        "invocation": {
+          "contract": "CBFWQUVJMK7AEEGB2NJAE5KIHEJWOK4EZ5FWKCHE6VIRI53ZGPM5KQW6",
+          "described": false,
+          "function": "transfer",
+          "not_described": "Stellar Asset Contract whose asset does not hash to its ID",
+          "raw": [
+            {
+              "label": "arg 0",
+              "value": "GAXK4ABJ673Y2PJ2HFOHSA2Z3BQ532KLWAWYCGKAVFDUBBKXUTJE555M"
+            },
+            {
+              "label": "arg 1",
+              "value": "GB46FU6LDIONFP2YMBEIINFRLREGDKWWAWLNESNZCGEME5J7KEFCDLFV"
+            },
+            {
+              "label": "arg 2",
+              "value": "100000000"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

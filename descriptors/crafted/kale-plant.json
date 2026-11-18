@@ -1,0 +1,26 @@
+{
+  "functions": {
+    "plant": {
+      "auth": true,
+      "fields": [
+        {
+          "label": "Amount",
+          "path": [
+            "amount"
+          ]
+        },
+        {
+          "label": "Farmer",
+          "path": [
+            "farmer"
+          ]
+        }
+      ],
+      "intent": "Stake tokens"
+    }
+  },
+  "version": 1,
+  "wasm_hashes": [
+    "db2c14290d4964e3805f2527dd132939ba5fb3fccac56b30bfab8fd091011627"
+  ]
+}

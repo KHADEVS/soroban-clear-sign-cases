@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "wasm_hashes": [
+    "72eb5d52c532e78ccc6c8a7f8523c458e03764074717172f69c2539e754ce624"
+  ],
+  "functions": {
+    "transfer": {
+      "intent": "Send tokens",
+      "auth": true,
+      "fields": [
+        {
+          "path": ["amount"],
+          "label": "Amount",
+          "format": "amount",
+          "token": { "self": true }
+        },
+        { "path": ["to"], "label": "Recipient" },
+        { "path": ["from"], "label": "From" }
+      ]
+    },
+    "approve": {
+      "intent": "Approve token spending",
+      "auth": true,
+      "fields": [
+        { "path": ["spender"], "label": "Spender" },
+        {
+          "path": ["amount"],
+          "label": "Allowance",
+          "format": "amount",
+          "token": { "self": true }
+        },
+        { "path": ["expiration_ledger"], "label": "Expires (ledger)" },
+        { "path": ["from"], "label": "Owner" }
+      ]
+    },
+    "burn": {
+      "intent": "Burn tokens",
+      "auth": true,
+      "fields": [
+        {
+          "path": ["amount"],
+          "label": "Amount",
+          "format": "amount",
+          "token": { "self": true }
+        }
+      ]
+    }
+  }
+}

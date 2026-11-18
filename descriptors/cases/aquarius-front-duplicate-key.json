@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "wasm_hashes": [
+    "131db85e62b0f7e3683bf4b5a6ae22b801d9acb2effd5cf3d78e9921b77b7c94"
+  ],
+  "functions": {
+    "swap_chained": {
+      "intent": "Swap tokens",
+      "auth": true,
+      "fields": [
+        {
+          "path": ["in_amount"],
+          "label": "You pay",
+          "format": "amount",
+          "token": { "path": ["token_in"] }
+        },
+        {
+          "path": ["out_min"],
+          "label": "Min. received",
+          "format": "amount",
+          "token": { "path": ["swaps_chain", -1, 2] }
+        },
+        { "path": ["user"], "label": "Account", "label": "Recipient" },
+        {
+          "path": ["fee_fraction"],
+          "label": "Fee",
+          "format": "percent",
+          "decimals": 4
+        }
+      ]
+    }
+  }
+}

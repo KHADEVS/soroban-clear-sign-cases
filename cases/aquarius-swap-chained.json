@@ -1,0 +1,175 @@
+{
+  "id": "aquarius-swap-chained",
+  "title": "The draft's authorization-tree example, run on the real Mainnet transaction",
+  "draft_sections": [
+    "3.0",
+    "3.1",
+    "3.4",
+    "5.1",
+    "5.2",
+    "5.3"
+  ],
+  "transaction": "real/aquarius-swap-chained.json",
+  "descriptors": [
+    "descriptors/draft/aquarius-front.json"
+  ],
+  "notes": [
+    "Transaction 02c785c9…8a44 and the descriptor are the draft's own (Example Usage, \"Authorization tree\"); the descriptor is copied unchanged.",
+    "Every value matches the draft's rendering. One line differs: the draft shows \"+1 more parameter (swaps_chain, in the raw view)\", but token_in is not a listed field either, so under §5.1 two parameters are left out."
+  ],
+  "expected": {
+    "operations": [
+      {
+        "invocation": {
+          "contract": "CCPGFQUTSEHDIQODRE3GJDNE64A35HZ32L7LPDN7GXOCIYNBJSMS6V6B",
+          "described": true,
+          "fields": [
+            {
+              "label": "You pay",
+              "value": "1 XLM"
+            },
+            {
+              "label": "Min. received",
+              "value": "2.7796236 XRF"
+            },
+            {
+              "label": "Account",
+              "value": "GDM22NKY7E67YQ25HDWZFQCNN3XUITQDXAWC5RAIUTCEJUQMJRNW5DHK"
+            },
+            {
+              "label": "Fee",
+              "value": "0%"
+            }
+          ],
+          "function": "swap_chained",
+          "intent": "Swap tokens",
+          "omitted": 2,
+          "raw": [
+            {
+              "label": "user",
+              "value": "GDM22NKY7E67YQ25HDWZFQCNN3XUITQDXAWC5RAIUTCEJUQMJRNW5DHK"
+            },
+            {
+              "label": "swaps_chain",
+              "value": "{\"vec\":[{\"vec\":[{\"vec\":[{\"address\":\"CAS3J7GYLGXMF6TDJBBYYSE3HQ6BBSMLNUQ34T6TZMYMW2EVH34XOWMA\"},{\"address\":\"CDJQXBQO5ICVQUPHZHW7SHOM56K2UNNPPAIXUUSA3XACEI6Q4JQLXNVI\"}]},{\"bytes\":\"b2e02fcfca6c96f8ad5cbd84e7784a777b36d9c96a2459402c4f458462aab7f0\"},{\"address\":\"CDJQXBQO5ICVQUPHZHW7SHOM56K2UNNPPAIXUUSA3XACEI6Q4JQLXNVI\"}]},{\"vec\":[{\"vec\":[{\"address\":\"CCW67TSZV3SSS2HXMBQ5JFGCKJNXKZM7UQUWUZPUTHXSTZLEO7SJMI75\"},{\"address\":\"CDJQXBQO5ICVQUPHZHW7SHOM56K2UNNPPAIXUUSA3XACEI6Q4JQLXNVI\"}]},{\"bytes\":\"b2e02fcfca6c96f8ad5cbd84e7784a777b36d9c96a2459402c4f458462aab7f0\"},{\"address\":\"CCW67TSZV3SSS2HXMBQ5JFGCKJNXKZM7UQUWUZPUTHXSTZLEO7SJMI75\"}]},{\"vec\":[{\"vec\":[{\"address\":\"CCW67TSZV3SSS2HXMBQ5JFGCKJNXKZM7UQUWUZPUTHXSTZLEO7SJMI75\"},{\"address\":\"CDFZUVS5YNLXU7VENKOUDEOHCJGKQNVUBWD7KMN6E7ZROKPYPFLRUJFG\"},{\"address\":\"CDTKPWPLOURQA2SGTKTUQOWRCBZEORB4BWBOMJ3D3ZTQQSGE5F6JBQLV\"}]},{\"bytes\":\"d4209c37743f61bccfda55e3236177791e593ef43acefba4c2eaba0b1195add4\"},{\"address\":\"CDTKPWPLOURQA2SGTKTUQOWRCBZEORB4BWBOMJ3D3ZTQQSGE5F6JBQLV\"}]},{\"vec\":[{\"vec\":[{\"address\":\"CBLLEW7HD2RWATVSMLAGWM4G3WCHSHDJ25ALP4DI6LULV5TU35N2CIZA\"},{\"address\":\"CDTKPWPLOURQA2SGTKTUQOWRCBZEORB4BWBOMJ3D3ZTQQSGE5F6JBQLV\"}]},{\"bytes\":\"b2e02fcfca6c96f8ad5cbd84e7784a777b36d9c96a2459402c4f458462aab7f0\"},{\"address\":\"CBLLEW7HD2RWATVSMLAGWM4G3WCHSHDJ25ALP4DI6LULV5TU35N2CIZA\"}]}]}"
+            },
+            {
+              "label": "token_in",
+              "value": "CAS3J7GYLGXMF6TDJBBYYSE3HQ6BBSMLNUQ34T6TZMYMW2EVH34XOWMA"
+            },
+            {
+              "label": "in_amount",
+              "value": "10000000"
+            },
+            {
+              "label": "out_min",
+              "value": "27796236"
+            },
+            {
+              "label": "fee_fraction",
+              "value": "0"
+            }
+          ]
+        },
+        "auth": [
+          {
+            "credentials": {
+              "kind": "source_account"
+            },
+            "tree": {
+              "display": {
+                "contract": "CCPGFQUTSEHDIQODRE3GJDNE64A35HZ32L7LPDN7GXOCIYNBJSMS6V6B",
+                "described": true,
+                "fields": [
+                  {
+                    "label": "You pay",
+                    "value": "1 XLM"
+                  },
+                  {
+                    "label": "Min. received",
+                    "value": "2.7796236 XRF"
+                  },
+                  {
+                    "label": "Account",
+                    "value": "GDM22NKY7E67YQ25HDWZFQCNN3XUITQDXAWC5RAIUTCEJUQMJRNW5DHK"
+                  },
+                  {
+                    "label": "Fee",
+                    "value": "0%"
+                  }
+                ],
+                "function": "swap_chained",
+                "intent": "Swap tokens",
+                "omitted": 2,
+                "raw": [
+                  {
+                    "label": "arg 0",
+                    "value": "GDM22NKY7E67YQ25HDWZFQCNN3XUITQDXAWC5RAIUTCEJUQMJRNW5DHK"
+                  },
+                  {
+                    "label": "arg 1",
+                    "value": "{\"vec\":[{\"vec\":[{\"vec\":[{\"address\":\"CAS3J7GYLGXMF6TDJBBYYSE3HQ6BBSMLNUQ34T6TZMYMW2EVH34XOWMA\"},{\"address\":\"CDJQXBQO5ICVQUPHZHW7SHOM56K2UNNPPAIXUUSA3XACEI6Q4JQLXNVI\"}]},{\"bytes\":\"b2e02fcfca6c96f8ad5cbd84e7784a777b36d9c96a2459402c4f458462aab7f0\"},{\"address\":\"CDJQXBQO5ICVQUPHZHW7SHOM56K2UNNPPAIXUUSA3XACEI6Q4JQLXNVI\"}]},{\"vec\":[{\"vec\":[{\"address\":\"CCW67TSZV3SSS2HXMBQ5JFGCKJNXKZM7UQUWUZPUTHXSTZLEO7SJMI75\"},{\"address\":\"CDJQXBQO5ICVQUPHZHW7SHOM56K2UNNPPAIXUUSA3XACEI6Q4JQLXNVI\"}]},{\"bytes\":\"b2e02fcfca6c96f8ad5cbd84e7784a777b36d9c96a2459402c4f458462aab7f0\"},{\"address\":\"CCW67TSZV3SSS2HXMBQ5JFGCKJNXKZM7UQUWUZPUTHXSTZLEO7SJMI75\"}]},{\"vec\":[{\"vec\":[{\"address\":\"CCW67TSZV3SSS2HXMBQ5JFGCKJNXKZM7UQUWUZPUTHXSTZLEO7SJMI75\"},{\"address\":\"CDFZUVS5YNLXU7VENKOUDEOHCJGKQNVUBWD7KMN6E7ZROKPYPFLRUJFG\"},{\"address\":\"CDTKPWPLOURQA2SGTKTUQOWRCBZEORB4BWBOMJ3D3ZTQQSGE5F6JBQLV\"}]},{\"bytes\":\"d4209c37743f61bccfda55e3236177791e593ef43acefba4c2eaba0b1195add4\"},{\"address\":\"CDTKPWPLOURQA2SGTKTUQOWRCBZEORB4BWBOMJ3D3ZTQQSGE5F6JBQLV\"}]},{\"vec\":[{\"vec\":[{\"address\":\"CBLLEW7HD2RWATVSMLAGWM4G3WCHSHDJ25ALP4DI6LULV5TU35N2CIZA\"},{\"address\":\"CDTKPWPLOURQA2SGTKTUQOWRCBZEORB4BWBOMJ3D3ZTQQSGE5F6JBQLV\"}]},{\"bytes\":\"b2e02fcfca6c96f8ad5cbd84e7784a777b36d9c96a2459402c4f458462aab7f0\"},{\"address\":\"CBLLEW7HD2RWATVSMLAGWM4G3WCHSHDJ25ALP4DI6LULV5TU35N2CIZA\"}]}]}"
+                  },
+                  {
+                    "label": "arg 2",
+                    "value": "CAS3J7GYLGXMF6TDJBBYYSE3HQ6BBSMLNUQ34T6TZMYMW2EVH34XOWMA"
+                  },
+                  {
+                    "label": "arg 3",
+                    "value": "10000000"
+                  },
+                  {
+                    "label": "arg 4",
+                    "value": "27796236"
+                  },
+                  {
+                    "label": "arg 5",
+                    "value": "0"
+                  }
+                ]
+              },
+              "sub_invocations": [
+                {
+                  "display": {
+                    "contract": "CAS3J7GYLGXMF6TDJBBYYSE3HQ6BBSMLNUQ34T6TZMYMW2EVH34XOWMA",
+                    "described": true,
+                    "fields": [
+                      {
+                        "label": "Amount",
+                        "value": "1 XLM"
+                      },
+                      {
+                        "label": "Recipient",
+                        "value": "CCPGFQUTSEHDIQODRE3GJDNE64A35HZ32L7LPDN7GXOCIYNBJSMS6V6B"
+                      },
+                      {
+                        "label": "From",
+                        "value": "GDM22NKY7E67YQ25HDWZFQCNN3XUITQDXAWC5RAIUTCEJUQMJRNW5DHK"
+                      }
+                    ],
+                    "function": "transfer",
+                    "intent": "Send tokens",
+                    "raw": [
+                      {
+                        "label": "arg 0",
+                        "value": "GDM22NKY7E67YQ25HDWZFQCNN3XUITQDXAWC5RAIUTCEJUQMJRNW5DHK"
+                      },
+                      {
+                        "label": "arg 1",
+                        "value": "CCPGFQUTSEHDIQODRE3GJDNE64A35HZ32L7LPDN7GXOCIYNBJSMS6V6B"
+                      },
+                      {
+                        "label": "arg 2",
+                        "value": "10000000"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

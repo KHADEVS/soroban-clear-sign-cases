@@ -1,0 +1,25 @@
+{
+  "crafted": "spec written for these cases (claim); no such Wasm exists",
+  "entries": [
+    {
+      "function_v0": {
+        "doc": "",
+        "inputs": [
+          {
+            "doc": "",
+            "name": "from",
+            "type": "address"
+          },
+          {
+            "doc": "",
+            "name": "id",
+            "type": "u64"
+          }
+        ],
+        "name": "claim",
+        "outputs": []
+      }
+    }
+  ],
+  "wasm_hash": "fc79f2db92c11896dbd3c06be088c10a7eb050be4b6104985cf8895095a30cbd"
+}

@@ -1,0 +1,26 @@
+{
+  "functions": {
+    "claim": {
+      "auth": true,
+      "fields": [
+        {
+          "label": "From",
+          "path": [
+            "from"
+          ]
+        },
+        {
+          "label": "ID",
+          "path": [
+            "id"
+          ]
+        }
+      ],
+      "intent": "Claim"
+    }
+  },
+  "version": 1,
+  "wasm_hashes": [
+    "fc79f2db92c11896dbd3c06be088c10a7eb050be4b6104985cf8895095a30cbd"
+  ]
+}

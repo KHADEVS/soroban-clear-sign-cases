@@ -1,0 +1,39 @@
+{
+  "functions": {
+    "mint_batch": {
+      "fields": [
+        {
+          "label": "Recipient 1",
+          "path": [
+            "operations",
+            0,
+            "0"
+          ]
+        },
+        {
+          "format": "amount",
+          "label": "Amount 1",
+          "path": [
+            "operations",
+            0,
+            "1"
+          ],
+          "token": {
+            "self": true
+          }
+        },
+        {
+          "label": "Caller",
+          "path": [
+            "caller"
+          ]
+        }
+      ],
+      "intent": "Mint tokens"
+    }
+  },
+  "version": 1,
+  "wasm_hashes": [
+    "83bf0a7fbe1502271f2e14d2a5a46c9cde1aa213be97616bd7c6b102b342692f"
+  ]
+}

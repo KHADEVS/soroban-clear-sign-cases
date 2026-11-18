@@ -1,0 +1,26 @@
+Update lending position
+Contract           CACSQWCMKG45TUHCQ3LXHOB7YEEJH4W376ZHQPXH2IZ3TE4NJHFZMCY7
+Function           submit
+Action 1           Repay
+Amount 1           5003.0001282 XLM
+Action 2           Withdraw collateral
+Amount 2           3035.9887324 USDC
+Account            GBOT34TBVIIOXU3YIWU4ZA7H44EIXTUCHMNB6J5QMRKSU3M4R3HCDPLR
+Pays from          GBOT34TBVIIOXU3YIWU4ZA7H44EIXTUCHMNB6J5QMRKSU3M4R3HCDPLR
+Sends to           GBOT34TBVIIOXU3YIWU4ZA7H44EIXTUCHMNB6J5QMRKSU3M4R3HCDPLR
++2 more parameters (raw view)
+
+Authorization entry 1: address (legacy) GBOT34TBVIIOXU3YIWU4ZA7H44EIXTUCHMNB6J5QMRKSU3M4R3HCDPLR, signature expires at ledger 65467968
+  [not described: legacy SOROBAN_CREDENTIALS_ADDRESS: out of scope]
+  Contract           CACSQWCMKG45TUHCQ3LXHOB7YEEJH4W376ZHQPXH2IZ3TE4NJHFZMCY7
+  Function           submit
+  arg 0              GBOT34TBVIIOXU3YIWU4ZA7H44EIXTUCHMNB6J5QMRKSU3M4R3HCDPLR
+  arg 1              GBOT34TBVIIOXU3YIWU4ZA7H44EIXTUCHMNB6J5QMRKSU3M4R3HCDPLR
+  arg 2              GBOT34TBVIIOXU3YIWU4ZA7H44EIXTUCHMNB6J5QMRKSU3M4R3HCDPLR
+  arg 3              {"vec":[{"map":[{"key":{"symbol":"address"},"val":{"address":"CAS3J7GYLGXMF6TDJBBYYSE3HQ6BBSMLNUQ34T6TZMYMW2EVH34XOWMA"}},{"key":{"symbol":"amount"},"val":{"i128":"50030001282"}},{"key":{"symbol":"request_type"},"val":{"u32":5}}]},{"map":[{"key":{"symbol":"address"},"val":{"address":"CCW67TSZV3SSS2HXMBQ5JFGCKJNXKZM7UQUWUZPUTHXSTZLEO7SJMI75"}},{"key":{"symbol":"amount"},"val":{"i128":"30359887324"}},{"key":{"symbol":"request_type"},"val":{"u32":3}}]}]}
+    [not described: legacy SOROBAN_CREDENTIALS_ADDRESS: out of scope]
+    Contract           CAS3J7GYLGXMF6TDJBBYYSE3HQ6BBSMLNUQ34T6TZMYMW2EVH34XOWMA
+    Function           transfer
+    arg 0              GBOT34TBVIIOXU3YIWU4ZA7H44EIXTUCHMNB6J5QMRKSU3M4R3HCDPLR
+    arg 1              CACSQWCMKG45TUHCQ3LXHOB7YEEJH4W376ZHQPXH2IZ3TE4NJHFZMCY7
+    arg 2              50030001282
